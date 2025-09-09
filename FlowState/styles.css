@@ -1,0 +1,112 @@
+@font-face{
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+@font-face{
+    src: url(fonts/OpenSans-Bold.ttf);
+    font-family: OpenSans;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #737373;
+}
+
+
+.main-header *{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.navbar{
+    padding: 20px;
+    background-color: #7ed957;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navsec li{
+    display: inline-block;
+}
+
+.nava{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    font-family: Roboto-Light;
+    display: block;
+}
+
+.main-header .nava:hover{
+    background-color: hsl(102, 63%, 70%);
+}
+
+#home{
+    color: #004aad;
+    font-size: 35px;
+    font-weight: 600px;
+    font-family: OpenSans;
+}
+
+.buttonsign{
+    background-color: black;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+}
+
+.buttonsign a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: calibri;
+}
+
+h1{
+    color: #50823a;
+    font-family: OpenSans;
+    margin: 0;
+    font-size: 3em;
+}
+
+.content{
+    background: url(images/pexels-nammau-14348174.jpg);
+    height: 300px;
+
+}
+
+.starter{
+    margin-left: 15%;
+    margin-top: 66.6px;
+    display: inline-block;
+    text-align: center;
+}
+
+.starter h4{
+    margin-top: -5%;
+    margin-bottom: 2px;
+    font-size: 1.43em;
+    font-family: OpenSans;
+}
+
+.starter button{
+    background-color: #545F71;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1em;
+    font-family: calibri;
+    width: 235px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0%;
+}
