@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowState Productivity Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel = "stylesheet" href = "calculateProductivity.css">
 </head>
 <body>
     <header class="main-header">
@@ -25,13 +26,109 @@
     
                         
     <main>
-        <section class="container">
-            
+        <!-------- First section -------->
+        <section class="container_productivity_calculator hero" >
+            <h1>Productivity Calculator</h1>
+            <p>This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you. </p>
         </section>
         
+        <!----------------- Form Section ------------------>
+        <section class="form">
+            <form>
+                <div class = "form-row">
+                    <label for = "Website">Website:</label>
+                    <input type = "text" id = "website" name = "website">
+                    
+                </div>
+                 <div class = "form-row">
+                    <label for = "Minutes Spent">Minutes spent:</label>
+                    <input type = "int" id = "minutes" name = "minutes">
+                    <br>
+                </div>
+               <div class = "form-row">
+                    <label>
+                        <input type = "checkbox" name = "productive">Productive
+                    </label>    
+                </div>    
+
+               <div class = "form-row">
+                    <label>
+                        <input type = "checkbox" name = "productive">Unproductive
+                    </label>  
+                </div>     
+
+                <button type="submit">Add Entry</button>
+            </form>   
+        </section>
 
 
+        <!----------------- Table Section ------------------>
+        <section>
+            <table border ="1" cellpadding = "8">
+               <thead>
+                 <th>Website</th>
+                 <th>Minutes Spent</th>
+                 <th>Tag</th>
+                 <th></th>
+                </thead>  
+
+                <tbody>
+                    <tr>
+                        <td>Youtube</td>    
+                        <td>34</td>    
+                        <td>Unproductive</td>  
+                        <td><button class="remove_record">Remove</button></td>  
+                    </tr>
+                    <tr>
+                        <td>Stack Overflow</td>    
+                        <td>48</td>    
+                        <td>Productive</td>  
+                        <td><button class="remove_record">Remove</button></td>  
+
+                    </tr>
+                    
+                    <tr>
+                        <td>Google Sheets</td>    
+                        <td>298</td>    
+                        <td>Productive</td>  
+                        <td><button class="remove_record">Remove</button></td>                         
+
+                    </tr>
+
+                </tbody>    
+            </table>   
+
+        </section>    
+         <!----------------- Summary Section ------------------>
+         <section>
+            <h3>Summary</h3>
+
+            <!--Top Analytics-->
+            <p>Productivity: 4 hrs 2 mins</p>
+            <p>Time Wasted: 34 mins</p>
+
+            <!--Chart-->
+            <div class="donut"></div>
+
+            <!--Visited Sites-->
+           <div>
+            <ol>
+                <p>Top Visited Sites</p>
+                <li>Google Sheets</li>
+                <li>Stack Overflow</li>
+                <li>Youtube</li>
+
+            </ol>    
+            </div>
+
+
+        </section> 
     </main>
+     <footer class="footer">
+        <br>
+        <hr>
+        <p>&copy;2025 FlowState. All Rights Reserved.</p>
+    </footer>
 
 
 </body>
