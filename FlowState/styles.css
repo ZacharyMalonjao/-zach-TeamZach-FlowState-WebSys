@@ -52,7 +52,7 @@ body{
 }
 
 .main-header .nava:hover{
-    background-color: hsl(102, 63%, 70%);
+    color: hsl(0, 0%, 0%);
 }
 
 #home{
@@ -87,25 +87,18 @@ h1{
     font-size: 3em;
 }
 
-.container {
+.container{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(images/pexels-nammau-14348174.jpg);
-  height: 300px;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   display: inline-block;
-   width: 100%;
-   opacity: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
   
    
-}
-
-
-.container2{
-    background: url(images/pexels-nammau-14348174.jpg);
-    height: 200px;
-
 }
 
 .starter{
