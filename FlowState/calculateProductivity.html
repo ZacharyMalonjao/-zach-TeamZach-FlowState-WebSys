@@ -45,25 +45,24 @@
                     <input type = "int" id = "minutes" name = "minutes">
                     <br>
                 </div>
-               <div class = "form-row">
-                    <label>
-                        <input type = "checkbox" name = "productive">Productive
-                    </label>    
-                </div>    
+              <div class="form-row">
+                <label class="row-label">Status:</label>
 
-               <div class = "form-row">
-                    <label>
-                        <input type = "checkbox" name = "productive">Unproductive
-                    </label>  
-                </div>     
+                <div class="options">
+                    <label class="option"><input type="checkbox" name="productive"> Productive</label>
+                    <label class="option"><input type="checkbox" name="unproductive"> Unproductive</label>
+                </div>
+                </div>
 
-                <button type="submit">Add Entry</button>
+             
+
+                <button type="submit" class ="remove-button">Add Entry</button>
             </form>   
         </section>
 
 
         <!----------------- Table Section ------------------>
-        <section>
+        <section class="table">
             <table border ="1" cellpadding = "8">
                <thead>
                  <th>Website</th>
@@ -100,7 +99,7 @@
 
         </section>    
          <!----------------- Summary Section ------------------>
-         <section>
+         <section class = "summary">
             <h3>Summary</h3>
 
             <!--Top Analytics-->
