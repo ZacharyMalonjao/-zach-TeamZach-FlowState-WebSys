@@ -1,0 +1,116 @@
+
+
+/* -------- First section -------- */
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+
+    
+
+}
+
+.hero h1{
+ color: #8ad16b;
+ margin-left:1em;
+ padding-right: 1em;
+}
+
+.hero p{
+    color: white;
+    margin-right: 5em;
+    padding-left: 1em
+    
+}
+
+
+
+/* -------- Form section -------- */
+
+.form{
+    background-color: white;
+    display: block;
+    align-items: center;
+    align-content: center;
+    padding: 10em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 60px;
+   
+
+    
+}
+
+
+
+.form input, 
+.form label,
+.form button{
+    font-size: 2em;
+  
+}
+
+.form input {
+    
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+.form button {
+    padding: 0.7em 2em;
+    font-size: 1.2em;
+    width: 50%;
+    margin-top: 1em;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+    
+}
+
+.form-row label {
+    flex: 0 0 180px; /* fixed width for label */
+    text-align: left;
+    margin-right: 1em;
+    
+}
+
+
+/* -------- Table section -------- */
+
+/* -------- Summary section -------- */
+.donut {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #578941 70% 40%,   /* Blue slice = 40% */
+    
+        #2ecc71 70% 100%  /* Green slice = 30% */
+      );
+      position: relative;
+      margin: 40px auto;
+    }
+    .donut::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+      background: #fff; /* Center hole */
+    }
+ 
