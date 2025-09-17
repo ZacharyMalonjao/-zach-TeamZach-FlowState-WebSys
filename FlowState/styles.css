@@ -13,10 +13,10 @@
 
 body{
     margin: 0;
-    background-color: #737373;
+    background-color:  #a2d18f;
     display: flow-root;
+    font-family: serif;
 }
-
 
 .main-header *{
     text-decoration: none;
@@ -43,7 +43,7 @@ body{
 }
 
 .nava{
-    color: rgb(255, 254, 254);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
     margin-right: 25px;
@@ -53,6 +53,20 @@ body{
 
 .main-header .nava:hover{
     color: hsl(0, 0%, 0%);
+}
+
+/* First, add the ::after pseudo-element to the anchor tag */
+#home::before {
+  content: '';
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-image: url('images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  margin-top: 13px;
+  vertical-align: middle;
 }
 
 #home{
@@ -90,22 +104,50 @@ h1{
 .container{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(images/pexels-nammau-14348174.jpg);
-    height: 300px;
+    height:550px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
     width: 100%;
     opacity: 100%;
+    text-align: center;
+    
   
    
 }
 
+.container_productivity_calculator{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(images/pexels-nammau-14348174.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
+.container_about_us{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(images/pexels-nammau-14348174.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
 .starter{
-    margin-left: 15%;
+
     margin-top: 66.6px;
     display: inline-block;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .starter h4{
@@ -255,4 +297,8 @@ h1{
     aside, section, article,{
         width: 100%;
     }
+}
+
+   body, * {
+    font-family: Roboto-Light, serif ;
 }
