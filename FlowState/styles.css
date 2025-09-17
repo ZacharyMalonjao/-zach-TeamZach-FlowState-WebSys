@@ -129,6 +129,18 @@ h1{
     opacity: 100%;
 }
 
+.container_about_us{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(images/pexels-nammau-14348174.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
 .starter{
 
     margin-top: 66.6px;
