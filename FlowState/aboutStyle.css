@@ -1,0 +1,80 @@
+
+
+/* -------------------- Hero section -------------------- */
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+
+
+}
+
+.hero h1{
+ color: #8ad16b;
+ margin-left:1em;
+ padding-right: 1em;
+ font-weight: bold;
+}
+
+.hero p{
+    color: white;
+    margin-right: 5em;
+    padding-left: 1em
+    
+}
+
+
+/* -------------------- Green Background Section -------------------- */
+.green-section{
+    background-color: #8ad16b;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------- White Background Section -------------------- */
+.content-about{
+    background-color: white;
+    border-radius: 60px;
+    padding: 2em;
+    margin: 2em;
+    width: 2000px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.developers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.developers-card{
+    text-align: center;
+    padding: 1em;
+}
+
+.developer-card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 1em;
+    border: 4px;
+}
+
+.developer-card h3{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+.developer-card p{
+    font-size: 0.95em;
+    color: black;
+}
