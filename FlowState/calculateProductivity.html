@@ -55,8 +55,9 @@
                 </div>
 
              
-
-                <button type="submit" class ="remove-button">Add Entry</button>
+                <div class ="button-row">
+                <button type="submit" class ="add-button">Add Entry</button>
+                </div>
             </form>   
         </section>
 
@@ -76,13 +77,13 @@
                         <td>Youtube</td>    
                         <td>34</td>    
                         <td>Unproductive</td>  
-                        <td><button class="remove_record">Remove</button></td>  
+                        <td><button class="remove-record">X</button></td>  
                     </tr>
                     <tr>
                         <td>Stack Overflow</td>    
                         <td>48</td>    
                         <td>Productive</td>  
-                        <td><button class="remove_record">Remove</button></td>  
+                        <td><button class="remove-record">X</button></td>  
 
                     </tr>
                     
@@ -90,7 +91,7 @@
                         <td>Google Sheets</td>    
                         <td>298</td>    
                         <td>Productive</td>  
-                        <td><button class="remove_record">Remove</button></td>                         
+                        <td><button class="remove-record">X</button></td>                         
 
                     </tr>
 
@@ -103,24 +104,27 @@
             <h3>Summary</h3>
 
             <!--Top Analytics-->
-            <p>Productivity: 4 hrs 2 mins</p>
-            <p>Time Wasted: 34 mins</p>
-
+            <div class="stats">
+                <p>Productivity: 4 hrs 2 mins</p>
+                <p>Time Wasted: 34 mins</p>
+            </div>    
             <!--Chart-->
-            <div class="donut"></div>
+            <div class="summary-content">
+                <div class="donut"></div>
 
-            <!--Visited Sites-->
-           <div>
-            <ol>
-                <p>Top Visited Sites</p>
-                <li>Google Sheets</li>
-                <li>Stack Overflow</li>
-                <li>Youtube</li>
+                <!--Visited Sites-->
+                <div class="sites">
+                    <p>Top Visited Sites</p>
+                    <ol>
+                        
+                        <li>Google Sheets</li>
+                        <li>Stack Overflow</li>
+                        <li>Youtube</li>
 
-            </ol>    
+                    </ol>    
+                </div>
+
             </div>
-
-
         </section> 
     </main>
      <footer class="footer">

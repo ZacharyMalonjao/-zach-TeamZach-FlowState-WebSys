@@ -93,12 +93,12 @@
     box-sizing: border-box;
 }
 
-.remove-button {
+.add-button {
   font-size: 1.5em;       /* make the text bigger */
   padding: 0.8em 2em;     /* taller + wider button */
   border-radius: 12px;    /* rounded corners */
   border: none;
-  background-color: #578941;
+  background-color:#a2d18f;
   color: white;
   cursor: pointer;
 
@@ -108,30 +108,31 @@
 }
 
 button:hover {
-  background-color: #466f34; /* darker green on hover */
+  background-color: #578941 /* darker green on hover */
 }
-.form-row,
+
 .button-row {
   display: flex;
   justify-content: center;  /* centers child horizontally */
+  align-items: center;
+  margin-top: 1em;
+  
 }    
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 1.5em;
+  padding-top: 0.2em;
+}
 
 
 
 /* ----------------------------- Table section ----------------------------- */
-.summary{
-  background-color: white;
-    border-radius: 60px;
-    padding: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    max-width: 2500px; /* Make the form wider! */
-    display: flex;
+
  
 
-}
+
 .table{
     background-color: white;
     border-radius: 60px;
@@ -141,6 +142,8 @@ button:hover {
     margin-top: 2em;
     margin-bottom: 2em;
     display:flex;
+    width: 95%;
+    border-collapse: collapse;
 
   
     max-width: 2500px;
@@ -160,19 +163,84 @@ button:hover {
 .table table td:nth-child(2),
 .table table th:nth-child(3),
 .table table td:nth-child(3) {
-    width: 200px;   /* Minutes column */
+    width: 300px;   /* Minutes column */
 }
 .table table th:nth-child(4),
 .table table td:nth-child(4) {
     width: 100px;
 }
 
+td, th {
+  padding: 1em 2em;  /* top-bottom, left-right spacing */
+  font-size: 1.5em;   
+}
+
+.remove-record{
+    font-size: 1em;       /* make the text bigger */
+   padding: 0.1em 0.1em;
+  border-radius: 12px;    /* rounded corners */
+  border: none;
+  background-color:#a2d18f;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center; 
+}
+
 
 
 /* ----------------------------- Summary section ----------------------------- */
+
+
+.summary{
+  background-color: white;
+    border-radius: 60px;
+    padding: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    max-width: 2500px; /* Make the form wider! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+.summary h3{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-style:bold;
+}
+
+.summary .stats {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  font-size: 2em;
+  margin-bottom: 2em;
+  
+}
+.summary .stats p{
+  border:3px solid #578941 ;
+  
+  padding: 0.5em 1.5em;        /* inside spacing */
+  border-radius: 60px;  
+  margin: 0;
+}
+
+.summary-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4em;   /* spacing between donut and list */
+}
+
 .donut {
-      width: 150px;
-      height: 150px;
+      width: 500px;
+      height: 500px;
       border-radius: 50%;
       background: conic-gradient(
         #578941 70% 40%,   /* Blue slice = 40% */
@@ -192,4 +260,11 @@ button:hover {
       border-radius: 50%;
       background: #fff; /* Center hole */
     }
- 
+ .sites {
+  font-size: 2em;
+}
+
+.sites p {
+  font-weight: bold;
+  margin-bottom: 3em;
+}
