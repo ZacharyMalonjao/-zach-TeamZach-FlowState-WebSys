@@ -38,10 +38,10 @@
 /* -------------------- White Background Section -------------------- */
 .content-about{
     background-color: white;
-    border-radius: 60px;
+    border-radius: 20px;
     padding: 2em;
     margin: 2em;
-    width: 2000px;
+    width: 1500px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -55,26 +55,44 @@
 }
 
 .developers-card{
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .developer-card img{
-    width: 180px;
-    height: 180px;
-    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
     object-fit: cover;
     margin-bottom: 1em;
-    border: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .developer-card h3{
     font-size: 1.2em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0 0.5em 0;
     color: black;
 }
 
 .developer-card p{
-    font-size: 0.95em;
+    font-size: 1em;
     color: black;
+}
+
+.developers-frame{
+    background: white;
+    padding: 1.5em;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    margin: 2em auto;
 }
