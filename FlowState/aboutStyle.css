@@ -29,7 +29,7 @@
 
 /* -------------------- Green Background Section -------------------- */
 .green-section{
-    background-color: #8ad16b;
+    /* background-color: #8ad16b; */
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -40,8 +40,9 @@
     background-color: white;
     border-radius: 20px;
     padding: 2em;
-    margin: 2em;
-    width: 1500px;
+    margin-left:2em ;
+    margin-right:2em;
+    /* width: 1500px; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -63,6 +64,7 @@
     align-items: center;
     text-align: center;
     padding: 1.5em;
+    
 }
 
 .developer-card img{
@@ -93,6 +95,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1500px;
-    margin: 2em auto;
+   /* width: 1500px;*/
+   padding: 2em;
+    margin-right: 3em;
+    margin-left: 3em ;
+}
+
+.footer{
+    background-color: #578941;
+    display:block;
 }

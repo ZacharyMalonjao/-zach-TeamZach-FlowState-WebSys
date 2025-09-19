@@ -295,12 +295,11 @@ h1{
     50%{transform: scale(1.1, 1.1);}
 }
 
-@media screen and (max-width:600px){
-    aside, section, article,{
-        width: 100%;
-    }
-}
 
+.footer{
+    background-color: #578941;
+    display:block;
+}
 
    body, * {
     font-family: Roboto-Light, serif ;
