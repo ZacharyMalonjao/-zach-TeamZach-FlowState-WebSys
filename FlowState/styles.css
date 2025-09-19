@@ -24,9 +24,6 @@ body{
 
 }
 
-.main-header{
-
-}
 .navbar{
     padding: 20px;
     background-color: #578941;
@@ -55,7 +52,6 @@ body{
     color: hsl(0, 0%, 0%);
 }
 
-/* First, add the ::after pseudo-element to the anchor tag */
 #home::before {
   content: '';
   display: inline-block;
@@ -101,21 +97,7 @@ h1{
     font-size: 3em;
 }
 
-.container{
-    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
-                url(images/pexels-nammau-14348174.jpg);
-    height:550px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 100%;
-    opacity: 100%;
-    text-align: center;
-    
-  
-   
-}
+
 
 .container_productivity_calculator{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
@@ -141,35 +123,12 @@ h1{
     opacity: 100%;
 }
 
-.starter{
 
-    margin-top: 66.6px;
-    display: inline-block;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.starter h4{
-    margin-top: -5%;
-    margin-bottom: 2px;
-    font-size: 1.43em;
-    font-family: OpenSans;
-    color: #ffffff;
-}
-
-.starter button{
-    background-color: #578941;
-    color: hsl(0, 0%, 100%);
-    font-size: 1.1em;
-    font-family: calibri;
-    width: 235px;
-    height: 35px;
-    border-radius: 5px;
-    margin: 0%;
-}
 
 /* home */
+/* .container3{
+    overflow: hidden;
+}
 .container3 p{
     display: flex;
     text-align: center;
@@ -179,13 +138,7 @@ h1{
 }
 #description{
     background-color: white;
-    display: block;
-    height: 15rem;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 3em;
-    margin-right: 3em;
-    border-radius: 1em;
+    
 }
 
 .display img{
@@ -295,13 +248,6 @@ h1{
     50%{transform: scale(1.1, 1.1);}
 }
 
-@media screen and (max-width:600px){
-    aside, section, article,{
-        width: 100%;
-    }
-}
-
-
    body, * {
     font-family: Roboto-Light, serif ;
-}
+} */
