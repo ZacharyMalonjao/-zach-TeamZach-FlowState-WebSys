@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowState Productivity Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="history.css">
 </head>
 <body>
     <header class="main-header">
@@ -25,13 +26,110 @@
     
                         
     <main>
-        <section class="container">
 
+        <section class="container_productivity_calculator hero" >
+            <h1>History</h1>
+            <p>The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
+        </section>
+
+         <section class = "summary">
+            <h3>Daily Summary</h3>
+
+            <!--Top Analytics-->
+            <div class="stats">
+                <p>Productivity: 4 hrs 2 mins</p>
+                <p>Time Wasted: 34 mins</p>
+            </div>    
+            <!--Chart-->
+            <div class="summary-content">
+                <div class="donut"></div>
+
+                <!--Visited Sites-->
+                <div class="sites">
+                    <p>Top Visited Sites</p>
+                    <ol>
+                        
+                        <li>Google Sheets</li>
+                        <li>Stack Overflow</li>
+                        <li>Youtube</li>
+
+                    </ol>    
+                </div>
+
+            </div>
+        </section> 
+
+
+        
+        <section class="summary">
+            <h3>Monthly Summary</h3>
+
+            <!--Top Analytics-->
+            <div class="stats">
+                <p>Productivity: 4 hrs 2 mins</p>
+                <p>Time Wasted: 34 mins</p>
+            </div> 
+
+            <!--Chart-->
+            <div class="summary-content">
+            <!-- Chart with grid wrapper -->
+            <div class="bar-chart-wrapper">
+                <div class="bar-chart-grid">
+                    <!-- Grid lines -->
+                    <div class="grid-line" style="bottom: 0%"><span>0</span></div>
+                    <div class="grid-line" style="bottom: 25%"><span>5</span></div>
+                    <div class="grid-line" style="bottom: 50%"><span>10</span></div>
+                    <div class="grid-line" style="bottom: 75%"><span>15</span></div>
+                    <div class="grid-line" style="bottom: 100%"><span>20</span></div>
+                </div>
+
+                <!-- Actual bar chart -->
+                <div class="bar-chart">
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar productive" style="height: 60%"></div>
+                            <div class="bar unproductive" style="height: 40%"></div>
+                        </div>
+                        <p>Jan</p>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar productive" style="height: 50%"></div>
+                            <div class="bar unproductive" style="height: 50%"></div>
+                        </div>
+                        <p>Feb</p>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bars">
+                            <div class="bar productive" style="height: 70%"></div>
+                            <div class="bar unproductive" style="height: 30%"></div>
+                        </div>
+                        <p>Mar</p>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Sites -->
+                <div class="sites">
+                    <p>Top Visited Sites</p>
+                    <ol>
+                        <li>Google Sheets</li>
+                        <li>Stack Overflow</li>
+                        <li>Youtube</li>
+                    </ol>
+                </div>
+            </div>
 
         </section>
-        
+
 
     </main>
+
+    <footer>
+        <br>
+        <hr>
+        <p>&copy;2025 FlowState. All Rights Reserved.</p>
+    </footer>
 
 
 </body>
