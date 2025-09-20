@@ -8,96 +8,96 @@
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+html{
+    font-size: 62.5%;
+}
+
 
 body{
-    margin: 0;
     background-color:  #a2d18f;
     display: flow-root;
-    font-family: serif;
+
 }
 
-.main-header *{
-    text-decoration: none;
-    list-style-type: none;
-
+.main-header{
+    background-color: #578941;
+    padding: 1rem 2rem;
+    width: 100%;
+    
 }
 
 .navbar{
-    padding: 20px;
-    background-color: #578941;
-}
-
-.navdiv{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    align-items: center;
 }
 
-.navsec li{
-    display: inline-block;
+.home-link{
+    font-size: 2.5rem;
+    font-family: OpenSans;
 }
 
-.nava{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 25px;
-    font-family: Roboto-Light;
-    display: block;
+.home-link a{
+    color: #e9e9e9;
+    text-decoration: none;
 }
 
-.main-header .nava:hover{
-    color: hsl(0, 0%, 0%);
-}
-
-#home::before {
+.home-link::before {
   content: '';
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 5rem;
+  height: 6rem;
   background-image: url('images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
   background-size: contain; 
   background-repeat: no-repeat;
-  margin-left: 8px;
-  margin-top: 13px;
+  margin-left: 0.8rem;
+  margin-top: 1.3rem;
   vertical-align: middle;
 }
 
-#home{
-    color: #e9e9e9;
-    font-size: 35px;
-    font-weight: 600px;
-    font-family: OpenSans;
+.nav-section{
+    display: flex; 
+    align-items: center;
+}
+
+.nav-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-section li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-margin{
+    margin-left: 1.5em;
+    margin-right: .5em;
 }
 
 .button_header{
     background-color: black;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 90px;
-    
-}
-
-.button_header a{
-
     color: white;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: sans-serif;
-
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    width: 8rem;
+    cursor: pointer;
 }
 
-h1{
-    color: #8ad16b;
-    font-family: OpenSans;
-    margin: 0;
-    font-size: 3em;
+.nav-margin:hover{
+    color: black;
 }
-
-
 
 .container_productivity_calculator{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
@@ -114,7 +114,7 @@ h1{
 .container_about_us{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(images/pexels-nammau-14348174.jpg);
-    height: 200px;
+    height: 20rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,132 +126,49 @@ h1{
 .footer{
     background-color: #578941;
     display:block;
-}
-
-/* home */
-/* .container3{
-    overflow: hidden;
-}
-.container3 p{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-    padding: 2em;
-}
-#description{
-    background-color: white;
-    
-}
-
-.display img{
-    width: 18rem;
-    
-}
-
-.display{
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100%;
-    width: 50%;
-    float: left;
-}   
-
-.container4{
-    display: flex;
-    justify-content: space-between;
-}
-
-.content img{
-    width: 20rem;
-    margin-top: 2em;
-    border-radius: 30%
-    
-}
-
-.container4 p{
-    text-align: center;
-    padding: 2.5em;
-}
-
-.content{
-    background-color: white;
-    display: inline-block;
-    margin-left: 3em;
-    margin-right: 3em;
-    border-radius: 1em;
-}
-
-.content button{
-    padding: 1em;
-    width: 18rem;
-    border-radius: 1em;
-    margin-bottom: 3em;
-    background-color: white;
-}
-
-#about{
-    width: 30%;
-    float: left;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#calculateProductivity{
-    width: 30%;
-    float: left;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#history{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    float: left;
-    padding: 10px;
-}
-
-.footer hr{
-    border: none;
-    background-color: #7ed957;
-    height: 2px;
-}
-
-.footer{
     color: white;
 }
 
-.footer p{
-    margin: 2em;
+
+
+@media (max-width: 59rem) and (min-width: 36rem){
+    html{
+        font-size: 50%;
+    }
+
+    .button_header{
+        width: auto;
+    }
 }
 
-.content:hover{
-    background-color: hsl(0, 0%, 90%);
-    animation-name: grow;
-    animation-duration: 2s;
+@media (max-width: 48rem){
+    html{
+        font-size: 37.5%;
+    }
+
+    
 }
 
-.content button:hover{
-    box-shadow: 0px 0px 5px black;
+@media (max-width: 36rem){
+    html{
+        font-size: 25%;
+    }
+
 }
 
+@media (max-width: 33.5rem){
+    .container2{
+        max-height: 70px;
+        overflow: scroll;
+        width: 100%;
+        margin: auto;
+    }
 
-
-@keyframes grow{
-    50%{transform: scale(1.1, 1.1);}
+    .container2 img{
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        
+    }
+    
 }
-
-
-   body, * {
-    font-family: Roboto-Light, serif ;
-} */

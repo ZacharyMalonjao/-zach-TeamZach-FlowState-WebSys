@@ -53,7 +53,7 @@
 #starter_home {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
                 url(images/pexels-nammau-14348174.jpg);
-    height: 550px;
+    height: 55rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,6 +62,7 @@
     align-items: center;
     opacity: 100%;
     text-align: center;
+    
 }
 
 /* Main container styling for FlowState content */
@@ -71,10 +72,8 @@
     align-items: center;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
-    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px 30px;
-
+    padding: 4rem 3rem;
     width: 100%;
     z-index: 10; /* Ensure it's above the background */
 }
@@ -86,7 +85,7 @@
 
 /* FlowState title styling */
 .starter h1 {
-    font-size: 3em;
+    font-size: 5rem;
     color: #ffffff;
     margin-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -95,8 +94,8 @@
 /* Subtitle styling */
 .starter h4 {
     margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.43em;
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
 }
@@ -105,12 +104,12 @@
 .starter button {
     background-color: #578941;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     font-family: Calibri, sans-serif;
-    width: 235px;
-    height: 45px;
+    width: 23.5rem;
+    height: 4.5rem;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 1rem;
     cursor: pointer;
     border: none;
 }
@@ -122,16 +121,15 @@
 
 /* Container for description section */
 .container2 {
-    margin-top: 50px;
-    padding: 40px 20px;
+    margin-top: 5rem;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
 /* Description text */
 .description1 {
-    margin-top: 20px;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.6rem;
     color: #333;
     font-family: 'Arial', sans-serif;
     padding: 0 20px;
@@ -142,18 +140,15 @@
 .description1 img {
     max-width: 100%;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .container2 {
     margin: auto;
     background-color: white;
-    padding: 20px;
+    padding: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 2rem 1.8rem;
     border-radius: 1em;
     display: inline-block;
 }
@@ -165,7 +160,7 @@
 }
 
 .description img {
-    width: 20rem;
+    width: 30rem;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -173,7 +168,7 @@
 
 .description p {
     flex: 1;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.6;
     color: black;
 }
@@ -194,73 +189,68 @@
 
 
 
-.container4{
+.container3{
     display: flex;
-    justify-content: space-between;
-
-}
-
-.content img{
-    width: 20rem;
-    margin-top: 2em;
-    border-radius: 30%;
-}
-
-.container4 p{
-    text-align: center;
-    padding: 2.5em;
-    flex: 1;
-    font-size: 16px;
-    line-height: 1.6;
+    flex-direction: row;
+    /* justify-content: space-between;
+    margin: auto; */
 }
 
 .content{
-    background-color: white;
-    display: inline-block;
-    margin-left: 3em;
-    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.8rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    flex: 1;
+    padding: 2em 3em;
     border-radius: 1em;
-    overflow: hidden;
-    margin: auto;
 }
 
-.content button{
-    padding: 1em;
-    width: 18rem;
-    border-radius: 1em;
-    margin-bottom: 3em;
-    background-color: white;
-    
+
+.content img{
+    width: 100%;
+    height: auto;
 }
 
-#about{
-    width: 30%;
-    float: left;
-    padding: 10px;
+.content p{
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: black;
+    padding: 2rem;
+}
+
+.content a{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-#calculateProductivity{
-    width: 30%;
-    float: left;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.content a button{
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.3rem;
 }
 
-#history{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    float: left;
-    padding: 10px;
+@media (max-width: 36rem){
+    .container3{
+        flex-direction: column;
+    }
+
+    .content p{
+    flex: 1;
+    font-size: 2rem;
+    line-height: 1.6;
+    color: black;
+    padding: 2rem;
+}
+    .content a button{
+    width: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
 }
 
 .footer hr{
@@ -277,7 +267,7 @@
     margin: 2em;
 }
 
-.content:hover{
+/* .content:hover{
     background-color: hsl(0, 0%, 90%);
     animation-name: grow;
     animation-duration: 2s;
@@ -287,6 +277,6 @@
     box-shadow: 0px 0px 5px black;
 }
 
-@keyframes grow{
+/* @keyframes grow{
     50%{transform: scale(1.1, 1.1);}
-}
+} */ 
