@@ -32,23 +32,29 @@
         <!----------------- Form Section ------------------>
         <section class="form">
             <form>
+
                 <div class = "form-row">
                     <label for = "website">Website:</label>
-                    <input type = "text" id = "website" name = "website">
+                    <input type = "text" id = "website" name = "website" placeholder="Input website name" required>
                     
                 </div>
                  <div class = "form-row">
                     <label for = "minutes">Minutes spent:</label>
-                    <input type = "int" id = "minutes" name = "minutes">
+                    <input type = "int" id = "minutes" name = "minutes" placeholder="Input minutes spent" required>
                     <br>
                 </div>
               <div class="form-row">
                 <label class="row-label">Status:</label>
 
                 <div class="options">
-                    <label class="option"><input type="checkbox" name="productive"> Productive</label>
-                    <label class="option"><input type="checkbox" name="unproductive"> Unproductive</label>
-                </div>
+                    <label class="option">
+                        <input type="radio" name="productivity" required> Productive
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="productivity" required> Unproductive
+                    </label>
+                    </div>
+
                 </div>
 
              
