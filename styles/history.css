@@ -1,9 +1,47 @@
+.container_history{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(../images/pexels-nammau-14348174.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
+
+/* -------------------- Hero section -------------------- */
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    gap: 30px;
+}
+
+.hero h1{
+ color: #fcfdfc;
+ padding: 10rem;
+ font-weight: bold;
+ font-size: 4.5rem;
+}
+
+.hero p{
+    color: white;
+    margin-right: 8rem;
+    padding-left: 8rem;
+    font-size:2rem;
+}
+
 /* Donut Section */
 
 
 .summary{
   background-color: white;
-    border-radius: 60px;
+    border-radius: 2em;
     padding: 2em;
     margin-left: 3em;
     margin-right: 3em;
@@ -18,8 +56,8 @@
 
 .summary h3{
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 1em;
+  font-size: 3rem;
+  margin-bottom: 2rem;
   font-style:bold;
 }
 
@@ -27,15 +65,15 @@
   display: flex;
   justify-content: center;
   gap: 4em;
-  font-size: 2em;
-  margin-bottom: 2em;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   
 }
 .summary .stats p{
   border:3px solid #578941 ;
   
   padding: 0.5em 1.5em;        /* inside spacing */
-  border-radius: 60px;  
+  border-radius: 2em;  
   margin: 0;
 }
 
@@ -43,12 +81,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 4em;   /* spacing between donut and list */
+  gap: 4rem;   /* spacing between donut and list */
+  padding: 3rem;
 }
 
 .donut {
-      width: 500px;
-      height: 500px;
+      width: 25rem;
+      height: 25rem;
       border-radius: 50%;
       background: conic-gradient(
         #578941 70% 40%,   /* Blue slice = 40% */
@@ -56,7 +95,7 @@
         #2ecc71 70% 100%  /* Green slice = 30% */
       );
       position: relative;
-      margin: 40px auto;
+      margin: 4rem;
 }
 
 .donut::after {
@@ -71,12 +110,13 @@
 }
 
  .sites {
-  font-size: 2em;
+  font-size: 3rem;
+  padding-right: 1rem;
 }
 
 .sites p {
   font-weight: bold;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 
@@ -90,9 +130,9 @@
 /* Bar Chart Wrapper to hold chart and grid */
 .bar-chart-wrapper {
   position: relative;
-  width: 500px;
-  height: 500px;
-  margin: 40px auto;
+  width: 50rem;
+  height: 50rem;
+  margin: 4rem;
 }
 
 /* Bar chart with z-index to appear above grid */
@@ -100,7 +140,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 3em;
+  gap: 3rem;
   height: 100%;
   width: 100%;
   position: relative;
@@ -126,7 +166,7 @@
 
 /* Base bar style */
 .bar {
-  width: 30px;
+  width: 3rem;
   transition: height 0.3s ease;
 }
 
@@ -144,7 +184,7 @@
 .bar-group p {
   margin-top: -2.2em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /* Background grid lines behind bar chart */
@@ -163,16 +203,16 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 0.1rem;
   background-color: #ccc;
 }
 
 /* Label for grid line (e.g., 0, 5, 10...) */
 .grid-line span {
   position: absolute;
-  left: -2.5em;
-  bottom: -0.5em;
-  font-size: 1em;
+  left: -2.5rem;
+  bottom: -0.5rem;
+  font-size: 1rem;
   color: #777;
 }
 
@@ -181,31 +221,7 @@
 
 
 
-.hero{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    overflow: auto;
 
-    
-
-}
-
-.hero h1{
- color: #8ad16b;
- margin-left:1em;
- padding-right: 1em;
- font-weight: bold;
-}
-
-.hero p{
-    color: white;
-    margin-right: 5em;
-    padding-left: 1em
-    
-}
 
 .footer{
     background-color: #578941;

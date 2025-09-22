@@ -1,9 +1,9 @@
 @font-face{
-    src: url(fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
     font-family: Roboto-Light;
 }
 @font-face{
-    src: url(fonts/OpenSans-Bold.ttf);
+    src: url(../fonts/OpenSans-Bold.ttf);
     font-family: OpenSans;
 }
 
@@ -57,7 +57,7 @@ body{
   display: inline-block;
   width: 5rem;
   height: 6rem;
-  background-image: url('images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
+  background-image: url('../images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
   background-size: contain; 
   background-repeat: no-repeat;
   margin-left: 0.8rem;
@@ -87,7 +87,7 @@ body{
 }
 
 .button_header{
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white;
     font-size: 1rem;
     margin-left: 1rem;
@@ -101,28 +101,10 @@ body{
     color: black;
 }
 
-.container_productivity_calculator{
-    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
-                url(images/pexels-nammau-14348174.jpg);
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 100%;
-    opacity: 100%;
-}
-
-.container_about_us{
-    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
-                url(images/pexels-nammau-14348174.jpg);
-    height: 20rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 100%;
-    opacity: 100%;
+.button_header:hover{
+    background-color: hsl(0, 0%, 0.08%);
+    color: hsl(0, 0%, 90%);
+    box-shadow: 0 1px 2px black;
 }
 
 .footer{
@@ -131,13 +113,23 @@ body{
     color: white;
 }
 
-@media(min-width: 96rem){
+.footer p{
+    margin: 2em;
+}
+
+@media(min-width: 100rem){
     html{
         font-size: 100%;
     }
 }
 
-@media (max-width: 59rem) and (min-width: 36rem){
+@media(min-width: 81.25rem){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 68.75rem){
     html{
         font-size: 50%;
     }
@@ -147,7 +139,7 @@ body{
     }
 }
 
-@media (max-width: 48rem){
+@media (max-width: 50rem){
     html{
         font-size: 37.5%;
     }
@@ -155,18 +147,17 @@ body{
     
 }
 
-@media (max-width: 36rem){
+@media (max-width: 37.5rem){
     html{
         font-size: 25%;
     }
 
 }
 
-@media (max-width: 33.5rem){
+@media (max-width: 37.5rem){
     .container2{
-        max-height: 70px;
+        height: 70px;
         overflow: scroll;
-        width: 100%;
         margin: auto;
     }
 

@@ -1,4 +1,14 @@
-
+.container_about_us{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(../images/pexels-nammau-14348174.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
 
 /* -------------------- Hero section -------------------- */
 .hero{
@@ -12,42 +22,69 @@
 }
 
 .hero h1{
- color: #8ad16b;
- margin-left: 2em;
- padding-right: 2em;
+ color: #fcfdfc;
+ padding: 10rem;
  font-weight: bold;
+ font-size: 4.5rem;
 }
 
 .hero p{
     color: white;
-    margin-right: 5em;
-    padding-left: 1em
-    
+    margin-right: 8rem;
+    padding-left: 8rem;
+    font-size:2rem;
 }
 
 
 /* -------------------- Green Background Section -------------------- */
 .green-section{
     /* background-color: #8ad16b; */
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 3rem 2rem;
 }
 
 /* -------------------- White Background Section -------------------- */
 .content-about{
     background-color: white;
-    border-radius: 20px;
-    padding: 2em;
-    margin-left:2em ;
-    margin-right:2em;
+    border-radius: 1em;
+    padding:2em;
     /* width: 1500px; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-about h2{
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.content-about p{
+    padding: 1rem 0;
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: black;
 }
 
 .developers{
+    background: white;
+    padding: 5rem;
+    margin: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.websys-developers h2{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+.developers-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
@@ -67,18 +104,9 @@
 
 }
 
-@media all and (max-width: 600px) {
-    body{
-        background-color: black;
-    }
-
-
-}
-
-
 .developer-card img{
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     border-radius: 16px;
     object-fit: cover;
     margin-bottom: 1em;
@@ -86,31 +114,36 @@
 }
 
 .developer-card h3{
-    font-size: 1.2em;
+    font-size: 2rem;
     margin: 0.5em 0 0.5em 0;
     color: black;
 }
 
 .developer-card p{
-    font-size: 1em;
+    padding: 1rem 0;
+    flex: 1;
+    font-size: 1.6rem;
+    line-height: 1.6;
     color: black;
 }
 
 .developers-frame{
-    background: white;
-    padding: 1.5em;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
     display: flex;
     justify-content: center;
     align-items: center;
-   /* width: 1500px;*/
-   padding: 2em;
+    /* padding: 2em;
     margin-right: 3em;
-    margin-left: 3em ;
+    margin-left: 3em ; */
 }
 
 .footer{
     background-color: #578941;
     display:block;
+}
+
+@media (max-width: 36rem){
+    .developers-section{
+        display: flex;
+        flex-direction: column;
+    }
 }
