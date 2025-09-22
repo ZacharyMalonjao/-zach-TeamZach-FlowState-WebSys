@@ -1,58 +1,6 @@
-/* #starter_home{
-    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
-                url(images/pexels-nammau-14348174.jpg);
-    height:550px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 100%;
-    opacity: 100%;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-}
-
-.starter{
-    display: inline-block;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.starter h4{
-    margin-top: -5%;
-    margin-bottom: 2px;
-    font-size: 1.43em;
-    font-family: OpenSans;
-    color: #ffffff;
-}
-
-.starter button{
-    background-color: #578941;
-    color: hsl(0, 0%, 100%);
-    font-size: 1.1em;
-    font-family: calibri;
-    width: 235px;
-    height: 35px;
-    border-radius: 5px;
-    margin: 0%;
-} */
-
-#starter_home {
+.container-home-page {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
-                url(images/pexels-nammau-14348174.jpg);
+                url(../images/pexels-nammau-14348174.jpg);
     height: 55rem;
     background-size: cover;
     background-position: center;
@@ -65,34 +13,32 @@
     
 }
 
-/* Main container styling for FlowState content */
-.container {
+
+
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 4rem 3rem;
     width: 100%;
-    z-index: 10; /* Ensure it's above the background */
+    z-index: 10; 
 }
 
-/* Starter section text alignment and styling */
-.starter {
+.hero-home-page {
     text-align: center;
 }
 
-/* FlowState title styling */
-.starter h1 {
+.hero-home-page h1 {
     font-size: 5rem;
     color: #ffffff;
     margin-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Subtitle styling */
-.starter h4 {
+.hero-home-page h4 {
     margin-top: 0;
     margin-bottom: 1.8rem;
     font-size: 2rem;
@@ -100,8 +46,7 @@
     color: #ffffff;
 }
 
-/* Button styling */
-.starter button {
+.hero-home-page button {
     background-color: #578941;
     color: #ffffff;
     font-size: 1.5rem;
@@ -114,19 +59,20 @@
     border: none;
 }
 
-/* Button hover effect */
 .starter button:hover {
     background-color: #467732;
 }
 
-/* Container for description section */
-.container2 {
-    margin-top: 5rem;
-    padding: 4rem 2rem;
+.container-descriptions {
     text-align: center;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem 2rem;
+    border-radius: 1em;
+    display: inline-block;
 }
 
-/* Description text */
 .description1 {
     font-size: 1.1em;
     line-height: 1.6rem;
@@ -136,37 +82,26 @@
     text-align: justify;
 }
 
-/* Description image styling */
-.description1 img {
+.descriptions-image img {
     max-width: 100%;
     border-radius: 12px;
     margin-bottom: 2rem;
 }
 
-.container2 {
-    margin: auto;
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem 1.8rem;
-    border-radius: 1em;
-    display: inline-block;
-}
-
-.description {
+.descriptions {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.description img {
+.descriptions img {
     width: 30rem;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.description p {
+.descriptions p {
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -189,7 +124,7 @@
 
 
 
-.container3{
+.container-content-selection{
     display: flex;
     flex-direction: row;
     /* justify-content: space-between;
@@ -208,12 +143,12 @@
 }
 
 
-.content img{
+.content-img img{
     width: 100%;
     height: auto;
 }
 
-.content p{
+.content-p p{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -221,31 +156,35 @@
     padding: 2rem;
 }
 
-.content a{
+.content-a a{
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.content a button{
+.content-button a button{
     width: 50%;
     padding: 1rem;
     font-size: 1.3rem;
 }
 
-@media (max-width: 36rem){
-    .container3{
+@media (max-width: 37.5rem){
+    .container-content-selection{
         flex-direction: column;
     }
 
-    .content p{
+    .content{
+        padding: 10rem;
+    }
+
+    .content-p p{
     flex: 1;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.6;
     color: black;
     padding: 2rem;
 }
-    .content a button{
+    .content-button a button{
     width: 50%;
     padding: 1rem;
     font-size: 2rem;
@@ -267,16 +206,17 @@
     margin: 2em;
 }
 
-/* .content:hover{
+.content button:hover{
     background-color: hsl(0, 0%, 90%);
+}
+
+.content:hover{
+    background-color: hsl(0, 0%, 90%);
+    box-shadow: 0 0 2px black;
     animation-name: grow;
     animation-duration: 2s;
 }
 
-.content button:hover{
-    box-shadow: 0px 0px 5px black;
-}
-
-/* @keyframes grow{
+@keyframes grow{
     50%{transform: scale(1.1, 1.1);}
-} */ 
+} 
