@@ -15,18 +15,22 @@
 }
 
 .hero h1{
- color: #8ad16b;
- margin-left:1em;
- padding-right: 1em;
+ color: #fcfdfc;
+ margin-left:10rem;
+ padding-right: 10rem;
  font-weight: bold;
+ font-size: 4.5rem;
 }
 
 .hero p{
     color: white;
-    margin-right: 5em;
-    padding-left: 1em
+    margin-right: 10rem;
+    padding-left: 10rem;
+    font-size:2rem;
     
 }
+
+
 
 
 
@@ -36,11 +40,11 @@
    .form {
     background-color: white;
     border-radius: 60px;
-    padding: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     /*max-width: 2500px;*/ 
     display: flex;
 
@@ -52,8 +56,8 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-     margin-bottom: 1.5em;
-     padding-top: 0.2em;
+     margin-bottom: 1.5rem;
+     padding-top: 0.2rem;
     
 }
 
@@ -62,40 +66,41 @@
     /* remove all the appearance hacks */
     width: auto;
     height: auto;
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
     cursor: pointer;
 }
 
 .form-row input[type="checkbox"],
 .form-row input[type="radio"] {
   transform: scale(2.5);  /* make them 80% bigger */
-  margin: 0 0.8em;
+  margin: 0 2rem;
   cursor: pointer;
 }
 
 
 .form-row label {
-    font-size: 2em;
-    margin-right: 1em;
-    margin-top: 1em;
-    min-width: 150px;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    min-width: 15rem;
     text-align: right;
     line-height: 2.5em;   /* match input height */
 }
 .form-row input {
-    font-size: 2em;
-    height: 2.5em;
-    width: 900px;
+    font-size: 2rem;
+    height: 5rem;
+    width: 60rem;
+
     max-width: 100%;               /* All inputs same size */
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     border-radius: 60px;
-    border: 5px solid #578941;
+    border: 3px solid #578941;
     box-sizing: border-box;
 }
 
 .add-button {
-  font-size: 1.5em;       /* make the text bigger */
-  padding: 0.8em 2em;     /* taller + wider button */
+  font-size: 1.5rem;       /* make the text bigger */
+  padding: 1.8rem 3rem;     /* taller + wider button */
   border-radius: 12px;    /* rounded corners */
   border: none;
   background-color:#a2d18f;
@@ -115,15 +120,15 @@ button:hover {
   display: flex;
   justify-content: center;  /* centers child horizontally */
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1rem;
   
 }    
 .form-row {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-bottom: 1.5em;
-  padding-top: 0.2em;
+  margin-bottom: 1.5rem;
+  padding-top: 0.2rem;
 }
 
 
@@ -136,11 +141,11 @@ button:hover {
 .table{
     background-color: white;
     border-radius: 60px;
-    padding: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display:flex;
     
     border-collapse: collapse;
@@ -153,7 +158,7 @@ button:hover {
 
 .table table{
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     border-radius: 30px;
     overflow: hidden;
     border: 1px solid #a2d18f;
@@ -163,21 +168,21 @@ button:hover {
 .table table td:nth-child(2),
 .table table th:nth-child(3),
 .table table td:nth-child(3) {
-    width: 300px;   /* Minutes column */
+   width: 3rem; /*Minutes column */
 }
 .table table th:nth-child(4),
 .table table td:nth-child(4) {
-    width: 100px;
+    width: 3rem;
 }
 
 td, th {
-  padding: 1em 2em;  /* top-bottom, left-right spacing */
-  font-size: 1.5em;   
+  padding: 2rem 3rem;  /* top-bottom, left-right spacing */
+  font-size: 2rem;   
 }
 
 .remove-record{
-    font-size: 1em;       /* make the text bigger */
-   padding: 0.1em 0.1em;
+    font-size: 1.5rem;       /* make the text bigger */
+   padding: 1rem 1rem;
   border-radius: 12px;    /* rounded corners */
   border: none;
   background-color:#a2d18f;
@@ -196,11 +201,11 @@ td, th {
 .summary{
   background-color: white;
     border-radius: 60px;
-    padding: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
      /* max-width: 2500px; */
     display: flex;
     flex-direction: column;
@@ -210,23 +215,23 @@ td, th {
 
 .summary h3{
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 1em;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   font-style:bold;
 }
 
 .summary .stats {
   display: flex;
   justify-content: center;
-  gap: 4em;
-  font-size: 2em;
-  margin-bottom: 2em;
+  gap: 4rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   
 }
 .summary .stats p{
   border:3px solid #578941 ;
   
-  padding: 0.5em 1.5em;        /* inside spacing */
+  padding: 1.5rem 3rem;        /* inside spacing */
   border-radius: 60px;  
   margin: 0;
 }
@@ -239,8 +244,8 @@ td, th {
 }
 
 .donut {
-      width: 500px;
-      height: 500px;
+       width: 25rem; 
+      height: 25rem;
       border-radius: 50%;
       background: conic-gradient(
         #578941 70% 40%,   /* Blue slice = 40% */
@@ -248,23 +253,27 @@ td, th {
         #2ecc71 70% 100%  /* Green slice = 30% */
       );
       position: relative;
-      margin: 40px auto;
+      margin: 4rem auto;
     }
     .donut::after {
       content: "";
       position: absolute;
       top: 25%;
       left: 25%;
-      width: 50%;
+      /* width: 50%; */
       height: 50%;
       border-radius: 50%;
       background: #fff; /* Center hole */
     }
  .sites {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .sites p {
   font-weight: bold;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
+
+/* ----------------------------- Responsiveness ----------------------------- */
+
+@media()
