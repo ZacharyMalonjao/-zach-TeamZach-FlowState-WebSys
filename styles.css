@@ -1,0 +1,181 @@
+@font-face{
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+@font-face{
+    src: url(fonts/OpenSans-Bold.ttf);
+    font-family: OpenSans;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color:  #a2d18f;
+    display: flow-root;
+
+}
+
+.main-header{
+    background-color: #578941;
+    padding: 1rem 2rem;
+    width: 100%;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.home-link{
+    font-size: 2.5rem;
+    font-family: OpenSans;
+}
+
+.home-link a{
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+.home-link::before {
+  content: '';
+  display: inline-block;
+  width: 5rem;
+  height: 6rem;
+  background-image: url('images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-left: 0.8rem;
+  margin-top: 1.3rem;
+  vertical-align: middle;
+}
+
+.nav-section{
+    display: flex; 
+    align-items: center;
+}
+
+.nav-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-section li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-margin{
+    margin-left: 1.5em;
+    margin-right: .5em;
+}
+
+.button_header{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.nav-margin:hover{
+    color: black;
+}
+
+.container_productivity_calculator{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(images/pexels-nammau-14348174.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
+.container_about_us{
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
+                url(images/pexels-nammau-14348174.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    opacity: 100%;
+}
+
+.footer{
+    background-color: #578941;
+    display:block;
+    color: white;
+}
+
+@media(min-width: 96rem){
+    html{
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 59rem) and (min-width: 36rem){
+    html{
+        font-size: 50%;
+    }
+
+    .button_header{
+        width: auto;
+    }
+}
+
+@media (max-width: 48rem){
+    html{
+        font-size: 37.5%;
+    }
+
+    
+}
+
+@media (max-width: 36rem){
+    html{
+        font-size: 25%;
+    }
+
+}
+
+@media (max-width: 33.5rem){
+    .container2{
+        max-height: 70px;
+        overflow: scroll;
+        width: 100%;
+        margin: auto;
+    }
+
+    .container2 img{
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        
+    }
+
+    
+}
