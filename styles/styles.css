@@ -22,9 +22,8 @@ html{
 
 
 body{
-    background-color:  #a2d18f;
+    background-color:#a2d18f;
     display: flow-root;
-
 }
 
 .main-header{
@@ -81,30 +80,37 @@ body{
     display: inline-block;
 }
 
-.nav-margin{
+.nav-hover-color{
     margin-left: 1.5em;
     margin-right: .5em;
 }
 
-.button_header{
-    background-color: hsl(0, 0%, 0%);
-    color: white;
+.button-header{
     font-size: 1rem;
     margin-left: 1rem;
     padding: 0.8rem;
     border-radius: 1rem;
     width: 8rem;
-    cursor: pointer;
 }
 
-.nav-margin:hover{
+.button-header-color{
+    background-color: #578941;
+    border: 1px solid white;
+    color: white;
+}
+
+.button-header-color:hover , .button-header-color:active{
+    background-color: white;
+    color: #578941;
+    background-position: 0 0;
+}
+
+.button-header-color:active{
+    opacity: 0.5;
+}
+
+.nav-hover-color:hover{
     color: black;
-}
-
-.button_header:hover{
-    background-color: hsl(0, 0%, 0.08%);
-    color: hsl(0, 0%, 90%);
-    box-shadow: 0 1px 2px black;
 }
 
 .footer{
@@ -115,6 +121,26 @@ body{
 
 .footer p{
     margin: 2em;
+}
+
+/* ----------------------------- Button Styles ----------------------------- */
+
+.button-styles{
+  border: none;
+  background-color:#578941;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #578941;
+}
+
+.button-styles:hover , .button-styles:active{
+    background-color: white;
+    color: #578941;
+    background-position: 0 0;
+}
+
+.button-styles:active{
+    opacity: 0.5;
 }
 
 @media(min-width: 100rem){
@@ -151,11 +177,10 @@ body{
     html{
         font-size: 25%;
     }
-
 }
 
 @media (max-width: 37.5rem){
-    .container-descriptions{
+    /* .container-descriptions{
         height: 70px;
         overflow: scroll;
         margin: auto;
@@ -166,7 +191,7 @@ body{
         top: 0;
         bottom: 0;
         
-    }
+    } */
 
     
 }
