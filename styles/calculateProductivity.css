@@ -10,7 +10,13 @@
     opacity: 100%;
 }
 
+.headers{
+   font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
 
+}
 
 /* ----------------------------- First section ----------------------------- */
 
@@ -58,13 +64,36 @@
     flex-direction: column;
  
 }
+
+ 
 .form-row{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: baseline;
      margin-bottom: 1.5rem;
-     padding-top: 0.2rem;
+     padding-top: 0.2rem; */
+
+     display: flex;
+  align-items: center;   /* vertically align label + input */
+  margin-bottom: 1.5rem;
+  justify-content: flex-start;
+  
+  padding-top: 0.2rem;
     
+}
+
+.form-row label {
+    /* 
+    margin-right: 1rem;
+    margin-top: 2rem;
+    min-width: 15rem;
+    text-align: right;
+    line-height: 2.5em;   match input height */
+
+    flex: 0 0 15rem;       /* fixed column for labels */
+  text-align: right;
+  margin-right: 1rem;
+  font-size: 2rem;
 }
 
 .form-row input[type="checkbox"],
@@ -75,6 +104,11 @@
     margin: 0 0.5rem;
     cursor: pointer;
 }
+.form-row input,
+.form-row .options {
+  flex: 1;   
+  font-size: 2rem;            /* all inputs take equal remaining space */
+}
 
 .form-row input[type="checkbox"],
 .form-row input[type="radio"] {
@@ -84,24 +118,24 @@
 }
 
 
-.form-row label {
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-top: 2rem;
-    min-width: 15rem;
-    text-align: right;
-    line-height: 2.5em;   /* match input height */
-}
+
+
 .form-row input {
-    font-size: 2rem;
-    height: 5rem;
-    width: 50rem;               /* All inputs same size */
-    padding: 0 0.5rem;
-    border-radius: 60px;
-    border: 3px solid #578941;
-    box-sizing: border-box;
+  font-size: 2rem;
+  height: 5rem;
+  width: 50rem;   /* default big input */
+  padding: 0 0.5rem;
+  border-radius: 60px;
+  border: 3px solid #578941;
+  box-sizing: border-box;
 }
 
+
+#minutes {
+  width: 15rem ;   /* much smaller than website input */
+   flex: 0 0 auto; 
+  
+}
 .add-button {
   font-size: 1.5rem;       /* make the text bigger */
   padding: 1.8rem 3rem;     /* taller + wider button */
@@ -120,23 +154,23 @@
   margin-top: 1rem;
   
 }    
-.form-row {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-bottom: 1.5rem;
-  padding-top: 0.2rem;
-}
+
 
 .options{
   margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .form-row input[type="radio"],
+  .form-row input[type="checkbox"] {
+    transform: scale(1.2);   /* shrink for tablets/phones */
+  }
 }
 
 
 /* ----------------------------- Table section ----------------------------- */
 
  
-
 
 .table{
     background-color: white;
@@ -147,6 +181,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     display:flex;
+    flex-direction: column;
     
     border-collapse: collapse;
 
@@ -155,6 +190,7 @@
     justify-content: center;
 
 }
+
 
 .table table{
     width: 100%;
@@ -175,10 +211,13 @@
     width: 3rem;
 }
 
-td, th {
-  padding: 2rem 3rem;  /* top-bottom, left-right spacing */
-  font-size: 2rem;   
+th, td{
+  
+  padding: 3rem;
+  padding: 2rem 2rem;  /* top-bottom, left-right spacing */
+  font-size: 2rem;  
 }
+
 
 .remove-record{
     font-size: 1.5rem;       /* make the text bigger */
@@ -210,12 +249,14 @@ td, th {
     text-align:center;
 }
 
-.summary h3{
+/* .summary h3{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
   font-style:bold;
-}
+  padding-top: 3rem;
+    padding-bottom: 3rem;
+} */
 
 .summary .stats {
   display: flex;
@@ -271,4 +312,4 @@ td, th {
   margin-bottom: 3rem;
 }
 
-/* ----------------------------- Responsiveness ----------------------------- */
+

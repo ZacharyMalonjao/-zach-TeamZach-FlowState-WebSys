@@ -31,34 +31,34 @@
         </section>
         
         <!----------------- Form Section ------------------>
-        <section class="form">
-            <form>
-
+      
+            <section class="form">
+              <form>
+                <h3 class="headers">Website Entry</h3>
                 <div class = "form-row">
                     <label for = "website">Website:</label>
                     <input type = "text" id = "website" name = "website" placeholder="Input website name" required>
                     
                 </div>
-                 <div class = "form-row">
-                    <label for = "minutes">Minutes spent:</label>
-                    <input type = "int" id = "minutes" name = "minutes" placeholder="Input minutes spent" required>
-                    <br>
-                </div>
-              <div class="form-row">
-                <label class="row-label">Status:</label>
+                    <div class = "form-row">
+                        <label for = "minutes">Minutes spent:</label>
+                        <input type = "number" id = "minutes" name = "minutes" placeholder="Input minutes spent" required min="1" max="1440">
+                        <br>
+                    </div>
+                <div class="form-row">
+                    <label class="row-label">Status:</label>
 
-                <div class="options">
-                    <label class="option">
-                        <input type="radio" name="productivity" required> Productive
-                    </label>
-                    <label class="option">
-                        <input type="radio" name="productivity" required> Unproductive
-                    </label>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="productivity" required> Productive
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="productivity" required> Unproductive
+                        </label>
+                        </div>
+
                     </div>
 
-                </div>
-
-             
                 <div class ="button-row">
                 <button type="submit" class ="button add-button button-styles">Add Entry</button>
                 </div>
@@ -67,7 +67,9 @@
 
 
         <!----------------- Table Section ------------------>
+         
         <section class="table">
+
             <table border ="1" cellpadding = "8">
                <thead>
                  <th>Website</th>
@@ -97,15 +99,16 @@
                         <td>Productive</td>  
                         <td><button class="button remove-record button-styles">X</button></td>                         
 
-                    </tr>
+                        </tr>
 
-                </tbody>    
-            </table>   
+                    </tbody>    
+                </table>   
 
-        </section>    
+            </section> 
+        </div>   
          <!----------------- Summary Section ------------------>
          <section class = "summary">
-            <h3>Summary</h3>
+            <h3 class="headers">Summary</h3>
 
             <!--Top Analytics-->
             <div class="stats">
