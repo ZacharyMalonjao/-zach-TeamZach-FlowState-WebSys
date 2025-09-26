@@ -1,4 +1,4 @@
-.container-home-page {
+.hero-background {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 55rem;
@@ -46,21 +46,12 @@
     color: #ffffff;
 }
 
-.hero-home-page button {
-    background-color: #578941;
-    color: #ffffff;
+.hero-home-page .button-starter {
     font-size: 1.5rem;
-    font-family: Calibri, sans-serif;
     width: 23.5rem;
     height: 4.5rem;
     border-radius: 5px;
     margin-top: 1rem;
-    cursor: pointer;
-    border: none;
-}
-
-.starter button:hover {
-    background-color: #467732;
 }
 
 /* ----------------------------- Second section descriptions ----------------------------- */
@@ -127,7 +118,7 @@
 
 
 
-    /* @media (max-width: 768px) {
+    @media (max-width: 768px) {
       .description {
         flex-direction: column;
         align-items: center;
@@ -138,7 +129,7 @@
         width: 100%;
         max-width: 300px;
       }
-    } */
+    }
 
 
 /* ----------------------------- third section descriptions ----------------------------- */
@@ -167,7 +158,7 @@
     height: auto;
 }
 
-.content-p p{
+.content-description p{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -175,16 +166,17 @@
     padding: 2rem;
 }
 
-.content-a a{
+.content-link a{
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.content-button a button{
+.content-button .content-link-button{
     width: 50%;
     padding: 1rem;
     font-size: 1.3rem;
+    border-radius: 5px;
 }
 
 @media (max-width: 37.5rem){
@@ -196,14 +188,14 @@
         padding: 10rem;
     }
 
-    .content-p p{
+    .content-description p{
     flex: 1;
     font-size: 3rem;
     line-height: 1.6;
     color: black;
     padding: 2rem;
 }
-    .content-button a button{
+    .content-button .content-link-button{
     width: 50%;
     padding: 1rem;
     font-size: 2rem;
@@ -227,11 +219,8 @@
     margin: 2em;
 }
 
-.content button:hover{
-    background-color: hsl(0, 0%, 90%);
-}
 
-.content:hover{
+/*.content:hover{
     background-color: hsl(0, 0%, 90%);
     box-shadow: 0 0 2px black;
     animation-name: grow;
@@ -240,4 +229,4 @@
 
 @keyframes grow{
     50%{transform: scale(1.1, 1.1);}
-} 
+}  */
