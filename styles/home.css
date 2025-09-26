@@ -61,7 +61,7 @@
     background-color: white;
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 3rem 2rem;
+    margin: 2rem 3rem;
     border-radius: 1em;
     display: inline-block;
 }
@@ -144,8 +144,7 @@
 .content{
     display: flex;
     flex-direction: column;
-    margin: 0 1.8rem;
-    margin-bottom: 2rem;
+    margin: 0 3rem 2rem 3rem;
     background-color: #ffffff;
     flex: 1;
     padding: 2em 3em;

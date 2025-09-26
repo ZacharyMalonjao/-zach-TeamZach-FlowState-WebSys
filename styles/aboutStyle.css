@@ -10,6 +10,10 @@
     opacity: 100%;
 }
 
+#about-page{
+    color: black;
+}
+
 /* -------------------- Hero section -------------------- */
 .hero{
     display: flex;
@@ -40,7 +44,7 @@
     /* background-color: #8ad16b; */
     /* display: flex; */
     /* justify-content: center; */
-    margin: 3rem 2rem;
+    margin: 2rem 3rem;
 }
 
 /* -------------------- White Background Section -------------------- */
@@ -71,9 +75,8 @@
 .developers{
     background: white;
     padding: 5rem;
-    margin: 3rem 2rem;
+    margin: 2rem 3rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
 }
 
 .websys-developers h2{
@@ -94,7 +97,6 @@
     background: rgb(255, 255, 255);
     border: 4px solid #578941;
     border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +111,6 @@
     border-radius: 16px;
     object-fit: cover;
     margin-bottom: 1em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .developer-card h3{
