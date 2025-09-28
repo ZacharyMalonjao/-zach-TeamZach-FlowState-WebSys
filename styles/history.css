@@ -1,3 +1,23 @@
+html, body {
+  height: 100%;       /* let body stretch full height */
+  margin: 0;          /* remove default body margin */
+  display: flex;      
+  flex-direction: column;  /* stack children vertically */
+}
+
+main {
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+    background-color: #578941;
+    color: white;
+    text-align: left;
+    padding:0;
+}
+
 .container_history{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
