@@ -210,93 +210,41 @@ main {
 
 /* ----------------------------- Table section ----------------------------- */
 
- 
-
-.table{
-    background-color: white;
-    border-radius: 2em;
-    padding: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display:flex;
-    flex-direction: column;
-    
-    border-collapse: collapse;
-
-  
-    /*max-width: 2500px;*/
-    justify-content: center;
-
+ .table table {
+  width: 100%;
+  border-collapse: collapse;  /* merge borders */
+  border: 1px solid #a2d18f; /* outer border */
+  font-size: 2rem;
 }
 
-
-.table table{
-    width: 100%;
-    font-size: 1.2rem;
-    border-radius: 1em;
-    overflow: hidden;
-    border: 1px solid #a2d18f;
+.table th, .table td {
+  border: 1px solid #a2d18f;  /* inner borders */
+  padding: 2rem;
+  text-align: left;
 }
 
-.table table th:nth-child(2),
-.table table td:nth-child(2),
-.table table th:nth-child(3),
-.table table td:nth-child(3) {
-   width: 3rem; /*Minutes column */
-}
-.table table th:nth-child(4),
-.table table td:nth-child(4) {
-    width: 3rem;
+.table th:nth-child(2),
+.table td:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 3rem;  /* narrow columns for numbers/tags */
 }
 
-th, td{
-  
-  padding: 3rem;
-  padding: 2rem 2rem;  /* top-bottom, left-right spacing */
-  font-size: 2rem;  
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 3rem;  /* narrow column for buttons */
 }
 
-
-.remove-record{
-    font-size: 1.5rem;       /* make the text bigger */
-   padding: 1rem 1rem;
-  border-radius: 12px;    /* rounded corners */
-  
-
+.remove-record {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 12px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
-
 
 
 /* ----------------------------- Summary section ----------------------------- */
-
-
-.summary{
-  background-color: white;
-    border-radius: 1em;
-    padding: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-     /* max-width: 2500px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-}
-
-/* .summary h3{
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-style:bold;
-  padding-top: 3rem;
-    padding-bottom: 3rem;
-} */
 
 .summary .stats {
   display: flex;
@@ -304,13 +252,12 @@ th, td{
   gap: 4rem;
   font-size: 2rem;
   margin-bottom: 2rem;
-  
 }
-.summary .stats p{
-  border:3px solid #578941 ;
-  
-  padding: 1.5rem 3rem;        /* inside spacing */
-  border-radius: 60px;  
+
+.summary .stats p {
+  border: 3px solid #578941;
+  padding: 1.5rem 3rem;  /* inner spacing */
+  border-radius: 60px;
   margin: 0;
 }
 
@@ -318,38 +265,30 @@ th, td{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20rem;  /* spacing between donut and list */
+  gap: 20rem;  /* space between donut and optional list */
 }
 
 .donut {
-      width: 25rem; 
-      height: 25rem;
-      border-radius: 50%;
-      background: conic-gradient(
-        #578941 70% 40%,   /* Blue slice = 40% */
-    
-        #2ecc71 70% 100%  /* Green slice = 30% */
-      );
-      position: relative;
-      margin: 4rem auto;
-    }
-    .donut::after {
-      content: "";
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      /* width: 50%; */
-      height: 50%;
-      border-radius: 50%;
-      background: #fff; /* Center hole */
-    }
- .sites {
-  font-size: 2rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: conic-gradient(
+    #578941 0% 40%, 
+    #2ecc71 40% 100%
+  );
+  position: relative;
+  margin: 4rem auto;
 }
 
-.sites p {
-  font-weight: bold;
-  margin-bottom: 3rem;
+.donut::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #fff; /* Center hole */
 }
 
 
