@@ -25,16 +25,16 @@
                         
     <main>
         <!-------- First section -------->
-        <section class="container_productivity_calculator hero" >
+        <section class="container-productivity-calculator hero" >
             <h1>Productivity Calculator</h1>
             <p>This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you. </p>
         </section>
         
         <!----------------- Form Section ------------------>
       
-            <section class="form">
+            <section class="entry-form">
               <form>
-                <h3 class="headers">Website Entry</h3>
+                <h3 class="section-header">Website Entry</h3>
                 <div class = "form-row">
                     <label for = "website">Website:</label>
                     <input type = "text" id = "website" name = "website" placeholder="Input website name" required>
@@ -42,17 +42,17 @@
                 </div>
                     <div class = "form-row">
                         <label for = "minutes">Minutes spent:</label>
-                        <input type = "number" id = "minutes" name = "minutes" placeholder="Input minutes spent" required min="1" max="1440">
+                        <input type = "number" id = "minutes" name = "minutes" placeholder="Input minutes" required min="1" max="1440">
                         <br>
                     </div>
                 <div class="form-row">
-                    <label class="row-label">Status:</label>
+                    <label class="entry-form-label">Status:</label>
 
                     <div class="options">
-                        <label class="option">
+                        <label class="entry-form-option">
                             <input type="radio" name="productivity" required> Productive
                         </label>
-                        <label class="option">
+                        <label class="entry-form-option">
                             <input type="radio" name="productivity" required> Unproductive
                         </label>
                         </div>
@@ -60,7 +60,7 @@
                     </div>
 
                 <div class ="button-row">
-                <button type="submit" class ="button add-button button-styles">Add Entry</button>
+                <button type="submit" class ="button--primary button-styles">Add Entry</button>
                 </div>
             </form>   
         </section>
@@ -108,7 +108,7 @@
         </div>   
          <!----------------- Summary Section ------------------>
          <section class = "summary">
-            <h3 class="headers">Summary</h3>
+            <h3 class="section-header">Summary</h3>
 
             <!--Top Analytics-->
             <div class="stats">
