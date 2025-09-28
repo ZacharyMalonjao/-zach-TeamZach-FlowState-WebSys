@@ -19,29 +19,60 @@
 }
 
 /* -------------------- Hero section -------------------- */
-.hero{
+
+.hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;  /* pushes title left, subtitle right */
     align-items: center;
-    text-align: center;
-    gap: 30px;
+    text-align: center;  /* keeps About justified left */
+    padding: 5rem 2rem;  /* spacing around the hero */
 }
 
-.hero h1{
- color: #fcfdfc;
- padding: 10rem;
- font-weight: bold;
- font-size: 4.5rem;
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;          /* space between title and subtitle */
+    align-items: flex-start;  /* align top edges */
+    width: 100%;
 }
 
-.hero p{
+
+.hero-about {
+    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)),
+                url('../images/pexels-steve-14053647.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    margin-right: 8rem;
-    padding-left: 8rem;
-    font-size:2rem;
 }
 
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hero h1 {
+    color: #fcfdfc;
+    padding: 10rem;      /* same as your other page */
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+.hero p {
+    color: white;
+    margin-right: 8rem;  /* same as other page */
+    padding-left: 8rem;  /* same as other page */
+    font-size: 2rem;
+}
+
+     
 
 /* -------------------- Green Background Section -------------------- */
 .green-section{
