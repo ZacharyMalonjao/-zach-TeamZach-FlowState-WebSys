@@ -11,13 +11,7 @@ main {
   flex-direction: column;
 }
 
-.footer {
-    background-color: #578941;
-    color: white;
-    text-align: left;
-    padding: 0;
 
-  }
 .container-productivity-calculator{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
@@ -40,7 +34,7 @@ main {
 }
 
 #calculate-productivity-page{
-  color: black;
+  color: #a2d18f;
 }
 
 
@@ -175,7 +169,7 @@ main {
 
 
 /* small responsive tweak */
-@media (max-width: 768px) {
+@media (max-width: 37.5rem) {
   .entry-form-wrapper {
     padding-left: 1rem;   /* shrink left padding */
     padding-right: 1rem;  /* shrink right padding */
@@ -291,4 +285,8 @@ main {
   background: #fff; /* Center hole */
 }
 
-
+@media (max-width: 37.5rem){
+  .hero p{
+        font-size: 2.5rem;
+    }
+}

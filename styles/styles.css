@@ -43,7 +43,6 @@ body{
 
 .home-link{
     font-size: 2.5rem;
-    font-family: OpenSans;
 }
 
 .home-link a{
@@ -110,7 +109,11 @@ body{
 }
 
 .nav-hover-color:hover{
-    color: black;
+    color: #a2d18f;
+}
+
+.nav-hover-color:active{
+    opacity: 0.5;
 }
 
 .footer{
@@ -180,18 +183,7 @@ body{
 }
 
 @media (max-width: 37.5rem){
-    /* .container-descriptions{
-        height: 70px;
-        overflow: scroll;
-        margin: auto;
-    }
-
-    .container-descriptions img{
-        position: sticky;
-        top: 0;
-        bottom: 0;
-        
-    } */
+    
 
     
 }
