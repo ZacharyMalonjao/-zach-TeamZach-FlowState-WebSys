@@ -93,7 +93,7 @@ main {
 
 
 .descriptions-img img {
-    width: 200rem;
+    width: 100rem;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -104,6 +104,7 @@ main {
     font-size: 1.6rem;
     line-height: 1.6;
     color: black;
+    padding: 2rem;
 }
 
 @media (max-width: 37.5rem){
@@ -128,9 +129,6 @@ main {
     }
 
 }
-
-
-
 
 /* ----------------------------- third section descriptions ----------------------------- */
 
