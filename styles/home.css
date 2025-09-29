@@ -122,6 +122,7 @@ main {
         width: 45%;
         height: 100%;
         align-content: center;
+        display: flex;
     }
 
     .container-descriptions{
