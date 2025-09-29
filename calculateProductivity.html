@@ -25,105 +25,95 @@
                         
     <main>
         <!-------- First section -------->
-        <section class="container_productivity_calculator hero" >
+        <section class="container-productivity-calculator hero" >
             <h1>Productivity Calculator</h1>
             <p>This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you. </p>
         </section>
         
         <!----------------- Form Section ------------------>
-      
-            <section class="form">
-              <form>
-                <h3 class="headers">Website Entry</h3>
-                <div class = "form-row">
-                    <label for = "website">Website:</label>
-                    <input type = "text" id = "website" name = "website" placeholder="Input website name" required>
-                    
-                </div>
-                    <div class = "form-row">
-                        <label for = "minutes">Minutes spent:</label>
-                        <input type = "number" id = "minutes" name = "minutes" placeholder="Input minutes spent" required min="1" max="1440">
-                        <br>
-                    </div>
-                <div class="form-row">
-                    <label class="row-label">Status:</label>
+      <section class="entry-form card" aria-labelledby="form-heading">
+            <form>
+                <div class="entry-form-wrapper"> 
+                    <h3 id="form-heading" class="section-header">Website Entry</h3>
 
-                    <div class="options">
-                        <label class="option">
-                            <input type="radio" name="productivity" required> Productive
-                        </label>
-                        <label class="option">
-                            <input type="radio" name="productivity" required> Unproductive
-                        </label>
+                    <div class="entry-form-row">
+                        <label for="website" class="entry-form-label">Website:</label>
+                        <input id="website" name="website" class="entry-form-input" type="text" placeholder="Input website name" required>
+                    </div>
+
+                    <div class="entry-form-row">
+                        <label for="minutes" class="entry-form-label">Minutes spent:</label>
+                        <input id="minutes" name="minutes" class="entry-form-input entry-form-input--small" type="number" placeholder="Input minutes" required min="1" max="1440">
+                    </div>
+
+                    <div class="entry-form-row">
+                        <div class="entry-form-label">Status:</div>
+                        <div class="entry-form-options">
+                            <label class="entry-form-option"><input type="radio" name="productivity" value="productive" required> Productive</label>
+                            <label class="entry-form-option"><input type="radio" name="productivity" value="unproductive" required> Unproductive</label>
                         </div>
-
                     </div>
 
-                <div class ="button-row">
-                <button type="submit" class ="button add-button button-styles">Add Entry</button>
-                </div>
-            </form>   
+                    <div class="button-row" style="width:100%; justify-content:center;">
+                    <button type="submit" class="button-styles button--primary">Add Entry</button>
+                    </div>
+                </div>    
+            </form>
         </section>
 
 
         <!----------------- Table Section ------------------>
          
-        <section class="table">
-
-            <table border ="1" cellpadding = "8">
-               <thead>
-                 <th>Website</th>
-                 <th>Minutes Spent</th>
-                 <th>Tag</th>
-                 <th></th>
-                </thead>  
-
+       <section class="table card">
+            <table>
+                <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Minutes Spent</th>
+                    <th>Tag</th>
+                    <th></th>
+                </tr>
+                </thead>
                 <tbody>
-                    <tr>
-                        <td>Youtube</td>    
-                        <td>34</td>    
-                        <td>Unproductive</td>  
-                        <td><button class="button remove-record button-styles">X</button></td>  
-                    </tr>
-                    <tr>
-                        <td>Stack Overflow</td>    
-                        <td>48</td>    
-                        <td>Productive</td>  
-                        <td><button class="button remove-record button-styles">X</button></td>  
+                <tr>
+                    <td>Youtube</td>
+                    <td>34</td>
+                    <td>Unproductive</td>
+                    <td><button class="button remove-record button-styles">X</button></td>
+                </tr>
+                <tr>
+                    <td>Stack Overflow</td>
+                    <td>48</td>
+                    <td>Productive</td>
+                    <td><button class="button remove-record button-styles">X</button></td>
+                </tr>
+                <tr>
+                    <td>Google Sheets</td>
+                    <td>298</td>
+                    <td>Productive</td>
+                    <td><button class="button remove-record button-styles">X</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 
-                    </tr>
-                    
-                    <tr>
-                        <td>Google Sheets</td>    
-                        <td>298</td>    
-                        <td>Productive</td>  
-                        <td><button class="button remove-record button-styles">X</button></td>                         
-
-                        </tr>
-
-                    </tbody>    
-                </table>   
-
-            </section> 
-        </div>   
          <!----------------- Summary Section ------------------>
-         <section class = "summary">
-            <h3 class="headers">Summary</h3>
+        <section class="summary card">
+            <h3 class="section-header">Summary</h3>
 
-            <!--Top Analytics-->
+            <!-- Top Analytics -->
             <div class="stats">
                 <p>Productivity: 4 hrs 2 mins</p>
                 <p>Time Wasted: 34 mins</p>
             </div>    
-            <!--Chart-->
+
+            <!-- Chart -->
             <div class="summary-content">
                 <div class="donut"></div>
-
-            
-                
-
+                <!-- You can add a list or breakdown next to the donut if needed -->
             </div>
-        </section> 
+        </section>
+
     </main>
      <footer class="footer">
        <br>

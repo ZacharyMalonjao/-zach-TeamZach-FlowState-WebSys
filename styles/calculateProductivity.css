@@ -1,4 +1,24 @@
-.container_productivity_calculator{
+html, body {
+  height: 100%;       /* let body stretch full height */
+  margin: 0;          /* remove default body margin */
+  display: flex;      
+  flex-direction: column;  /* stack children vertically */
+}
+
+main {
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+    background-color: #578941;
+    color: white;
+    text-align: left;
+    padding: 0;
+
+  }
+.container-productivity-calculator{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 25rem;
@@ -10,7 +30,8 @@
     opacity: 100%;
 }
 
-.headers{
+
+.section-header{
    font-size: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -21,6 +42,7 @@
 #calculate-productivity-page{
   color: black;
 }
+
 
 /* ----------------------------- First section ----------------------------- */
 
@@ -48,219 +70,181 @@
 
 
 
+.card {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 /* ------------------------------- Form section ----------------------------- */
 
-
-   .form {
-    background-color: white;
-    border-radius: 2em;
-    padding: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    /*max-width: 2500px;*/ 
-    display: flex;
-
-    align-items: center;
-    flex-direction: column;
- 
+.section-header{
+    text-align:center;
+     width: 100%;
 }
 
- 
-.form-row{
-    /* display: flex;
-    justify-content: center;
-    align-items: baseline;
-     margin-bottom: 1.5rem;
-     padding-top: 0.2rem; */
+.entry-form-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem; 
+}
 
-     display: flex;
-  align-items: center;   /* vertically align label + input */
-  margin-bottom: 1.5rem;
-  justify-content: flex-start;
+.entry-form.card {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem 3rem; /* top-bottom 2rem, left-right 3rem */
+  margin: 2rem 3rem;  /* same as table/summary sections */
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
   
-  padding-top: 0.2rem;
-    
+  max-width: 60rem; /* or whatever matches the width of your inputs */
+  align-items: flex-start; /* keep labels aligned left inside each row */
 }
 
-.form-row label {
-    /* 
-    margin-right: 1rem;
-    margin-top: 2rem;
-    min-width: 15rem;
-    text-align: right;
-    line-height: 2.5em;   match input height */
-
-    flex: 0 0 15rem;       /* fixed column for labels */
-  text-align: right;
+.entry-form-label {
+  min-width: 15rem;
+  text-align: right; 
+  font-size: 2rem;        
   margin-right: 1rem;
-  font-size: 2rem;
-}
-
-.form-row input[type="checkbox"],
-.form-row input[type="radio"] {
-    /* remove all the appearance hacks */
-    width: auto;
-    height: auto;
-    margin: 0 0.5rem;
-    cursor: pointer;
-}
-.form-row input,
-.form-row .options {
-  flex: 1;   
-  font-size: 2rem;            /* all inputs take equal remaining space */
-}
-
-.form-row input[type="checkbox"],
-.form-row input[type="radio"] {
-  transform: scale(2.5);  /* make them 80% bigger */
-  margin: 0 2rem;
-  cursor: pointer;
 }
 
 
-
-
-.form-row input {
+.entry-form-input {
   font-size: 2rem;
   height: 5rem;
-  width: 50rem;   /* default big input */
+  width: 50rem;           /* fixed width for normal inputs */
   padding: 1rem;
   border-radius: 60px;
   border: 3px solid #578941;
   box-sizing: border-box;
 }
 
-
-#minutes {
-  width: 15rem ;   /* much smaller than website input */
-   flex: 0 0 auto; 
-  
+.entry-form-input--small {
+  width: 17rem;           /* minutes input is narrower */
+  flex: 0 0 auto;
 }
-.add-button {
-  font-size: 1.5rem;       /* make the text bigger */
-  padding: 1.8rem 3rem;     /* taller + wider button */
-  border-radius: 5px;    /* rounded corners */
-  
 
+
+.entry-form-option {
+  font-size: 2rem;         
+}
+
+.button {
+  font-size: 1.5rem;        
+}
+
+
+.button--primary {
+  font-size: 1.5rem;
+  padding: 1.8rem 3rem;  
+  border-radius: 5px;
   display: flex;
-  justify-content: center; 
-
+  justify-content: center;
+  align-items: center;    /* ensures vertical centering */
 }
 
 .button-row {
   display: flex;
-  justify-content: center;  /* centers child horizontally */
-  align-items: center;
+  justify-content: center; /* centers the button horizontally */
   margin-top: 1rem;
-  
-}    
-
-
-.options{
-  margin-top: 3rem;
 }
 
+.entry-form-options input[type="radio"],
+.entry-form-options input[type="checkbox"] {
+  transform: scale(1.5);   /* make them big */
+  margin: 0 2rem;          /* space around */
+  cursor: pointer;
+  
+}
+
+
+/* small responsive tweak */
 @media (max-width: 768px) {
-  .form-row input[type="radio"],
-  .form-row input[type="checkbox"] {
-    transform: scale(1.2);   /* shrink for tablets/phones */
+  .entry-form-wrapper {
+    padding-left: 1rem;   /* shrink left padding */
+    padding-right: 1rem;  /* shrink right padding */
+    max-width: 90%;       /* let it fit screen nicely */
+    align-items: stretch; /* let rows fill the width */
+  }
+
+  .entry-form-row {
+    flex-direction: column;  /* stack label + input vertically */
+    align-items: stretch;    /* let inputs fill width */
+    gap: 0.5rem;             /* small spacing */
+  }
+
+  .entry-form-label {
+    text-align: left;         /* label aligns left now */
+    margin-bottom: 0.5rem;
+    min-width: auto;          /* remove fixed width */
+  }
+
+  .entry-form-input,
+  .entry-form-input--small {
+    width: 100%;              /* inputs fill wrapper */
+    flex: 1;
+  }
+
+  .entry-form-options {
+    flex-direction: column;   /* stack radio buttons */
+    gap: 0.5rem;
   }
 }
 
 
 /* ----------------------------- Table section ----------------------------- */
 
- 
-
-.table{
-    background-color: white;
-    border-radius: 2em;
-    padding: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display:flex;
-    flex-direction: column;
-    
-    border-collapse: collapse;
-
-  
-    /*max-width: 2500px;*/
-    justify-content: center;
-
+ .table table {
+  width: 100%;
+  border-collapse: collapse;  /* merge borders */
+  border: 1px solid #a2d18f; /* outer border */
+  font-size: 2rem;
 }
 
-
-.table table{
-    width: 100%;
-    font-size: 1.2rem;
-    border-radius: 1em;
-    overflow: hidden;
-    border: 1px solid #a2d18f;
+.table th, .table td {
+  border: 1px solid #a2d18f;  /* inner borders */
+  padding: 2rem;
+  text-align: left;
 }
 
-.table table th:nth-child(2),
-.table table td:nth-child(2),
-.table table th:nth-child(3),
-.table table td:nth-child(3) {
-   width: 3rem; /*Minutes column */
-}
-.table table th:nth-child(4),
-.table table td:nth-child(4) {
-    width: 3rem;
+.table th:nth-child(2),
+.table td:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 3rem;  /* narrow columns for numbers/tags */
 }
 
-th, td{
-  
-  padding: 3rem;
-  padding: 2rem 2rem;  /* top-bottom, left-right spacing */
-  font-size: 2rem;  
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 3rem;  /* narrow column for buttons */
 }
 
-
-.remove-record{
-    font-size: 1.5rem;       /* make the text bigger */
-   padding: 1rem 1rem;
-  border-radius: 12px;    /* rounded corners */
-  
-
+.remove-record {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 12px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
-
 
 
 /* ----------------------------- Summary section ----------------------------- */
-
-
-.summary{
-  background-color: white;
-    border-radius: 1em;
-    padding: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-     /* max-width: 2500px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-}
-
-/* .summary h3{
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-style:bold;
-  padding-top: 3rem;
-    padding-bottom: 3rem;
-} */
 
 .summary .stats {
   display: flex;
@@ -268,13 +252,12 @@ th, td{
   gap: 4rem;
   font-size: 2rem;
   margin-bottom: 2rem;
-  
 }
-.summary .stats p{
-  border:3px solid #578941 ;
-  
-  padding: 1.5rem 3rem;        /* inside spacing */
-  border-radius: 60px;  
+
+.summary .stats p {
+  border: 3px solid #578941;
+  padding: 1.5rem 3rem;  /* inner spacing */
+  border-radius: 60px;
   margin: 0;
 }
 
@@ -282,38 +265,30 @@ th, td{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20rem;  /* spacing between donut and list */
+  gap: 20rem;  /* space between donut and optional list */
 }
 
 .donut {
-      width: 25rem; 
-      height: 25rem;
-      border-radius: 50%;
-      background: conic-gradient(
-        #578941 70% 40%,   /* Blue slice = 40% */
-    
-        #2ecc71 70% 100%  /* Green slice = 30% */
-      );
-      position: relative;
-      margin: 4rem auto;
-    }
-    .donut::after {
-      content: "";
-      position: absolute;
-      top: 25%;
-      left: 25%;
-      /* width: 50%; */
-      height: 50%;
-      border-radius: 50%;
-      background: #fff; /* Center hole */
-    }
- .sites {
-  font-size: 2rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: conic-gradient(
+    #578941 0% 40%, 
+    #2ecc71 40% 100%
+  );
+  position: relative;
+  margin: 4rem auto;
 }
 
-.sites p {
-  font-weight: bold;
-  margin-bottom: 3rem;
+.donut::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #fff; /* Center hole */
 }
 
 
