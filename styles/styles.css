@@ -8,7 +8,6 @@
 }
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ html{
     font-size: 62.5%;
 }
 
-
 body{
     background-color:#a2d18f;
     display: flow-root;
@@ -30,7 +28,6 @@ body{
     background-color: #578941;
     padding: 1rem 2rem;
     width: 100%;
-    
 }
 
 .navbar{

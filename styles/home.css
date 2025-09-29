@@ -1,16 +1,15 @@
 html, body {
-  height: 100%;       /* let body stretch full height */
-  margin: 0;          /* remove default body margin */
-  display: flex;      
-  flex-direction: column;  /* stack children vertically */
-}
-
-main {
-  flex: 1;  
+  height: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .hero-background {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 

@@ -24,52 +24,42 @@
     
                         
     <main>
-
-        <section class="container_history hero" >
+        <section class="container-history hero" >
             <h1>History</h1>
             <p>The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
         </section>
-
-         <section class = "summary">
+         
+        <section class = "container-daily-summary">
             <h3>Daily Summary</h3>
-
             <!--Top Analytics-->
-            <div class="stats">
+            <div class="daily-summary-stats">
                 <p>Productivity: 4 hrs 2 mins</p>
                 <p>Time Wasted: 34 mins</p>
             </div>    
             <!--Chart-->
-            <div class="summary-content">
-                <div class="donut"></div>
-
-                <!--Visited Sites-->
-                <div class="sites">
-                    <p>Top Visited Sites</p>
-                    <ol>
-                        
-                        <li>Google Sheets</li>
-                        <li>Stack Overflow</li>
-                        <li>Youtube</li>
-
-                    </ol>    
+                <div class="daily-summary-content">
+                    <div class="daily-summary-donut"></div>
+                    <!--Visited Sites-->
+                    <div class="daily-summary-sites">
+                        <p>Top Visited Sites</p>
+                        <ol>
+                            <li>Google Sheets</li>
+                            <li>Stack Overflow</li>
+                            <li>Youtube</li>
+                        </ol>    
+                    </div>
                 </div>
-
-            </div>
         </section> 
 
-
-        
-        <section class="summary">
+        <section class="container-monthly-summary">
             <h3>Monthly Summary</h3>
-
             <!--Top Analytics-->
-            <div class="stats">
+            <div class="monthly-summary-stats">
                 <p>Productivity: 4 hrs 2 mins</p>
                 <p>Time Wasted: 34 mins</p>
             </div> 
-
             <!--Chart-->
-            <div class="summary-content">
+            <div class="monthly-summary-content">
             <!-- Chart with grid wrapper -->
             <div class="bar-chart-wrapper">
                 <div class="bar-chart-grid">
@@ -80,7 +70,6 @@
                     <div class="grid-line" style="bottom: 75%"><span>15</span></div>
                     <div class="grid-line" style="bottom: 100%"><span>20</span></div>
                 </div>
-
                 <!-- Actual bar chart -->
                 <div class="bar-chart">
                     <div class="bar-group">
@@ -106,9 +95,8 @@
                     </div>
                 </div>
             </div>
-
                 <!-- Sites -->
-                <div class="sites">
+                <div class="monthly-summary-sites">
                     <p>Top Visited Sites</p>
                     <ol>
                         <li>Google Sheets</li>
@@ -117,7 +105,6 @@
                     </ol>
                 </div>
             </div>
-
         </section>
 
 
