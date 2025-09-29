@@ -13,7 +13,7 @@ main {
 
 
 
-.container_history{
+.container-history{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 25rem;
@@ -53,10 +53,11 @@ main {
     font-size:2rem;
 }
 
+/* -------------------- Daily Summary -------------------- */
 /* Donut Section */
 
 
-.summary{
+.container-daily-summary{
   background-color: white;
     border-radius: 2em;
     padding: 2em;
@@ -71,14 +72,14 @@ main {
     text-align:center;
 }
 
-.summary h3{
+.container-daily-summary h3{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2rem;
   font-style:bold;
 }
 
-.summary .stats {
+.container-daily-summary .daily-summary-stats {
   display: flex;
   justify-content: center;
   gap: 4em;
@@ -86,7 +87,7 @@ main {
   margin-bottom: 2rem;
   
 }
-.summary .stats p{
+.container-daily-summary .daily-summary-stats p{
   border:3px solid #578941 ;
   
   padding: 0.5em 1.5em;        /* inside spacing */
@@ -94,7 +95,7 @@ main {
   margin: 0;
 }
 
-.summary-content {
+.daily-summary-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -102,7 +103,8 @@ main {
   padding: 3rem;
 }
 
-.donut {
+
+.daily-summary-donut {
       width: 25rem;
       height: 25rem;
       border-radius: 50%;
@@ -115,7 +117,7 @@ main {
       margin: 4rem;
 }
 
-.donut::after {
+.daily-summary-donut::after {
     content: "";
     position: absolute;
     top: 25%;
@@ -126,15 +128,64 @@ main {
     background: #fff; /* Center hole */
 }
 
- .sites {
+.daily-summary-sites {
   font-size: 3rem;
   padding-right: 1rem;
 }
 
-.sites p {
+.daily-summary-sites p {
   font-weight: bold;
   margin-bottom: 3rem;
 }
+
+/* -------------------- Monthly Summary -------------------- */
+
+.container-monthly-summary{
+  background-color: white;
+    border-radius: 2em;
+    padding: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* max-width: 2500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+.container-monthly-summary h3{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-style:bold;
+}
+
+.container-monthly-summary .monthly-summary-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  
+}
+.container-monthly-summary .monthly-summary-stats p{
+  border:3px solid #578941 ;
+  
+  padding: 0.5em 1.5em;        /* inside spacing */
+  border-radius: 2em;  
+  margin: 0;
+}
+
+.monthly-summary-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;   /* spacing between donut and list */
+  padding: 3rem;
+}
+
 
 /* Bar Chart Wrapper to hold chart and grid */
 .bar-chart-wrapper {
@@ -223,6 +274,16 @@ main {
   bottom: -0.5rem;
   font-size: 1rem;
   color: #777;
+}
+
+.monthly-summary-sites {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+.monthly-summary-sites p {
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .footer{
