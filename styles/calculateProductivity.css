@@ -173,8 +173,7 @@ main {
   .entry-form-wrapper {
     padding-left: 1rem;   /* shrink left padding */
     padding-right: 1rem;  /* shrink right padding */
-    max-width: 90%;       /* let it fit screen nicely */
-    align-items: stretch; /* let rows fill the width */
+    max-width: 75%;       /* let it fit screen nicely */
   }
 
   .entry-form-row {
@@ -186,7 +185,6 @@ main {
   .entry-form-label {
     text-align: left;         /* label aligns left now */
     margin-bottom: 0.5rem;
-    min-width: auto;          /* remove fixed width */
   }
 
   .entry-form-input,
