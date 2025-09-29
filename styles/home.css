@@ -1,3 +1,17 @@
+html, body {
+  height: 100%;       /* let body stretch full height */
+  margin: 0;          /* remove default body margin */
+  display: flex;      
+  flex-direction: column;  /* stack children vertically */
+}
+
+main {
+  flex: 1;  
+  display: flex;
+  flex-direction: column;
+}
+
+
 .hero-background {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
@@ -35,14 +49,12 @@
     font-size: 5rem;
     color: #ffffff;
     margin-bottom: 15px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .hero-home-page h4 {
     margin-top: 0;
     margin-bottom: 1.8rem;
     font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
     color: #ffffff;
 }
 
@@ -57,44 +69,37 @@
 /* ----------------------------- Second section descriptions ----------------------------- */
 
 .container-descriptions {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     background-color: white;
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 2rem 3rem;
     border-radius: 1em;
-    display: inline-block;
+    text-align: center;
 }
 
-.descriptions-image {
-    font-size: 1.1em;
-    line-height: 1.6rem;
-    color: #333;
-    font-family: 'Arial', sans-serif;
+.descriptions-img{
     padding: 0 20px;
-    text-align: justify;
 }
 
-.descriptions-image img {
+.descriptions-img img{
     max-width: 100%;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    height: auto;
 }
 
-.descriptions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.descriptions img {
-    width: 30rem;
+.descriptions-img img {
+    width: 200rem;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.descriptions p {
+.descriptions-content p{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -102,34 +107,29 @@
 }
 
 @media (max-width: 37.5rem){
-    .descriptions{
-        padding: 2rem;
+    .descriptions-content p{
+        font-size: 3rem;
     }
 
-    .descriptions p{
-        font-size: 2rem;
+    .descriptions-content{
+        width: 55%;
+        height: 100%;
+        overflow: auto;
     }
 
-    .descriptions img {
-    width: 35rem;
+    .descriptions-img {
+        width: 45%;
+        height: 100%;
+        align-content: center;
+    }
+
+    .container-descriptions{
+        height: 150px;
     }
 
 }
 
 
-
-    @media (max-width: 768px) {
-      .description {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .description img {
-        width: 100%;
-        max-width: 300px;
-      }
-    }
 
 
 /* ----------------------------- third section descriptions ----------------------------- */
@@ -163,6 +163,7 @@
     line-height: 1.6;
     color: black;
     padding: 2rem;
+    text-align: center;
 }
 
 .content-link a{

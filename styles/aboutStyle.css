@@ -15,7 +15,7 @@
 }
 
 #about-page{
-    color: black;
+    color: #a2d18f;
 }
 
 /* -------------------- Hero section -------------------- */
@@ -86,7 +86,7 @@
 .content-about{
     background-color: white;
     border-radius: 1em;
-    padding:2em;
+    padding: 5rem;
     /* width: 1500px; */
     display: flex;
     align-items: flex-start;
@@ -176,9 +176,29 @@
     display:block;
 }
 
-@media (max-width: 36rem){
+@media (max-width: 37.5rem){
     .developers-section{
         display: flex;
         flex-direction: column;
+    }
+
+    .content-about p{
+        font-size: 3rem;
+    }
+
+    .developer-card p{
+        font-size: 3rem;
+    }
+
+    .developer-card h3{
+        font-size: 3.4rem;
+    }
+
+    .websys-developers h2, .content-about h2{
+        font-size: 4.2rem;
+    }
+
+    .hero p{
+        font-size: 2.5rem;
     }
 }

@@ -11,12 +11,7 @@ main {
   flex-direction: column;
 }
 
-.footer {
-    background-color: #578941;
-    color: white;
-    text-align: left;
-    padding:0;
-}
+
 
 .container_history{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
@@ -31,7 +26,7 @@ main {
 }
 
 #history-page{
-  color: black;
+  color: #a2d18f;
 }
 
 /* -------------------- Hero section -------------------- */
@@ -238,14 +233,13 @@ main {
   color: #777;
 }
 
-
-
-
-
-
-
-
 .footer{
     background-color: #578941;
     display:block;
+}
+
+@media (max-width: 37.5rem){
+  .hero p{
+        font-size: 2.5rem;
+    }
 }
