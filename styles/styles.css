@@ -53,8 +53,8 @@ body{
 .home-link::before {
   content: '';
   display: inline-block;
-  width: 6.5rem;
-  height: 7.5rem;
+  width: 6rem;
+  height: 7rem;
   background-image: url('../images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad.png');
   background-size: contain; 
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body{
 .nav-section a{
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .nav-section li{
@@ -85,7 +85,7 @@ body{
 }
 
 .button-header{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
     padding: 0.8rem;
     border-radius: 1rem;
