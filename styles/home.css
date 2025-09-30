@@ -23,11 +23,10 @@ main {
     opacity: 100%;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    
+    z-index: 10; 
 }
 
-.hero-home-content{
+.hero-home__col{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,12 +36,13 @@ main {
 .hero-home__title {
     font-size: 5rem;
     color: #ffffff;
-    margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 .hero-home__subtitle {
     margin-top: 0;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
     color: #ffffff;
 }
@@ -55,9 +55,9 @@ main {
     margin-top: 1rem;
 }
 
-/* ----------------------------- Second section descriptions ----------------------------- */
+/* ----------------------------- intro section ----------------------------- */
 
-.container-descriptions {
+.intro__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,25 +70,30 @@ main {
     text-align: center;
 }
 
-.descriptions-img{
+.intro__title{
+    text-align: start;
+    display: inline-block;
+}
+
+.intro__image{
     padding: 0 20px;
 }
 
-.descriptions-img img{
+.intro__image{
     max-width: 100%;
     border-radius: 12px;
     height: auto;
 }
 
 
-.descriptions-img img {
-    width: 100rem;
+.intro__image{
+    width: 35rem;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.descriptions-content p{
+.intro__desc{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -97,41 +102,40 @@ main {
 }
 
 @media (max-width: 37.5rem){
-    .descriptions-content p{
+    .intro__desc{
         font-size: 3rem;
-    }
-
-    .descriptions-content{
         width: 55%;
-        height: 100%;
         overflow: auto;
+        height: 100%;
     }
 
-    .descriptions-img {
+    .intro__content{    
+        height: 100%;
+        height: 150px;
+    }
+
+    .intro__image {
         width: 45%;
         height: 100%;
         align-content: center;
         display: flex;
     }
 
-    .container-descriptions{
-        height: 150px;
-    }
-
 }
 
-/* ----------------------------- third section descriptions ----------------------------- */
+/* ----------------------------- services section ----------------------------- */
 
-.container-content-selection{
+.services{
     display: flex;
     flex-direction: row;
     /* justify-content: space-between;
     margin: auto; */
 }
 
-.content{
+.card{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 3rem 2rem 3rem;
     background-color: #ffffff;
     flex: 1;
@@ -140,12 +144,12 @@ main {
 }
 
 
-.content-img img{
+.card__image{
     width: 100%;
     height: auto;
 }
 
-.content-description p{
+.card__desc{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -154,40 +158,43 @@ main {
     text-align: center;
 }
 
-.content-link a{
+.card__link {
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.content-button .content-link-button{
-    width: 50%;
+.card__link {
+    width: 100%;
     padding: 1rem;
-    font-size: 1.3rem;
     border-radius: 5px;
 }
 
+.card__text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 37.5rem){
-    .container-content-selection{
+    .services{
         flex-direction: column;
     }
 
-    .content{
+    .card{
         padding: 10rem;
     }
 
-    .content-description p{
+    .card__desc{
     flex: 1;
     font-size: 3rem;
     line-height: 1.6;
     color: black;
     padding: 2rem;
 }
-    .content-button .content-link-button{
-    width: 50%;
-    padding: 1rem;
-    font-size: 2rem;
-}
+
+    .card__text{
+        font-size: 2.5rem;
+    }
 
 }
 

@@ -28,7 +28,7 @@ main {
     opacity: 100%;
 }
 
-.hero-calculate-productivity-content{
+.hero-calculate-productivity__row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +40,7 @@ main {
   color: #fcfdfc;
   padding: 10rem;
   font-weight: bold;
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 
 .hero-calculate-productivity__paragraph{
@@ -50,7 +50,11 @@ main {
     font-size:2rem;
 }
 
-
+@media (max-width: 37.5rem){
+  .hero-calculate-productivity__paragraph{
+        font-size: 2.5rem;
+    }
+}
 
 .card {
   background-color: white;
@@ -137,9 +141,9 @@ main {
 
 
 .button--primary {
-  font-size: 1.5rem;
   padding: 1.8rem 3rem;  
   border-radius: 5px;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;    /* ensures vertical centering */
@@ -189,6 +193,10 @@ main {
   .entry-form-options {
     flex-direction: column;   /* stack radio buttons */
     gap: 0.5rem;
+  }
+
+  .button--primary{
+    font-size: 2.5rem;
   }
 }
 
@@ -274,10 +282,4 @@ main {
   height: 50%;
   border-radius: 50%;
   background: #fff; /* Center hole */
-}
-
-@media (max-width: 37.5rem){
-  .hero p{
-        font-size: 2.5rem;
-    }
 }
