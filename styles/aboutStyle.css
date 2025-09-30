@@ -1,75 +1,40 @@
+#about-page{
+    color: #a2d18f;
+}
 
+/* ----------------------------- hero section ----------------------------- */
 
-
-
-.container_about_us{
+.hero-about__image{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 25rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 100%;
     opacity: 100%;
 }
 
-#about-page{
-    color: #a2d18f;
-}
-
-/* -------------------- Hero section -------------------- */
-
-.hero {
+.hero-about-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  /* pushes title left, subtitle right */
+    justify-content: space-between;
     align-items: center;
-    text-align: center;  /* keeps About justified left */
-    padding: 5rem 2rem;  /* spacing around the hero */
+    text-align: center;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;          /* space between title and subtitle */
-    align-items: flex-start;  /* align top edges */
-    width: 100%;
+.hero-about__title{
+  color: #fcfdfc;
+  padding: 10rem;
+  font-weight: bold;
+  font-size: 4.5rem;
 }
 
-
-.hero-about {
-    background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)),
-                url('../images/pexels-steve-14053647.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.hero-about__paragraph{
     color: white;
-}
-
-.hero-title {
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.hero-subtitle {
-    font-size: 2rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.hero h1 {
-    color: #fcfdfc;
-    padding: 10rem;      /* same as your other page */
-    font-weight: bold;
-    font-size: 4.5rem;
-}
-.hero p {
-    color: white;
-    margin-right: 8rem;  /* same as other page */
-    padding-left: 8rem;  /* same as other page */
-    font-size: 2rem;
+    margin-right: 8rem;
+    padding-left: 8rem;
+    font-size:2rem;
 }
 
      

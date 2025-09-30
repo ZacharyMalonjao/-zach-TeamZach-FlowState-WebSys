@@ -11,42 +11,39 @@ main {
   flex-direction: column;
 }
 
+#history-page{
+  color: #a2d18f;
+}
 
+/* ----------------------------- hero section ----------------------------- */
 
-.container-history{
+.hero-history__image{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 25rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 100%;
     opacity: 100%;
 }
 
-#history-page{
-  color: #a2d18f;
-}
-
-/* -------------------- Hero section -------------------- */
-.hero{
+.hero-history-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 30px;
 }
 
-.hero h1{
- color: #fcfdfc;
- padding: 10rem;
- font-weight: bold;
- font-size: 4.5rem;
+.hero-history__title{
+  color: #fcfdfc;
+  padding: 10rem;
+  font-weight: bold;
+  font-size: 4.5rem;
 }
 
-.hero p{
+.hero-history__paragraph{
     color: white;
     margin-right: 8rem;
     padding-left: 8rem;
