@@ -11,53 +11,43 @@ main {
   flex-direction: column;
 }
 
-.hero-background {
+/* ----------------------------- hero section starter ----------------------------- */
+
+.hero-home__image {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
     height: 55rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 100%;
-    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
     
 }
 
-/* ----------------------------- First section starter ----------------------------- */
-
-.hero {
+.hero-home-content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 4rem 3rem;
-    width: 100%;
-    z-index: 10; 
 }
 
-.hero-home-page {
-    text-align: center;
-}
-
-.hero-home-page h1 {
+.hero-home__title {
     font-size: 5rem;
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-.hero-home-page h4 {
+.hero-home__subtitle {
     margin-top: 0;
     margin-bottom: 1.8rem;
     font-size: 2rem;
     color: #ffffff;
 }
 
-.hero-home-page .button-starter {
+.hero-home__button {
     font-size: 1.5rem;
     width: 23.5rem;
     height: 4.5rem;

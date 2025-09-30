@@ -24,9 +24,9 @@ body{
     display: flow-root;
 }
 
-.main-header{
+.main__header{
     background-color: #578941;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     width: 100%;
 }
 
@@ -69,8 +69,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
-    margin-left: 1.5em;
-    margin-right: .5em;
+    margin-right: 2.7rem;
 }
 
 .navbar__list{
@@ -80,17 +79,21 @@ body{
 
 .navbar__button{
     background-color: #578941;
-    margin-left: 1rem;
     border-radius: 1rem;
     border: 1px solid white;
     padding: 0.8rem;
     width: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__button--secondary{
+    margin-left: 1rem;
 }
 
 .navbar__button-text{
     color: white;
     font-size: 1.2rem;
-    
 }
 
 .navbar__button:hover , .navbar__button:active , .navbar__button:hover span{
@@ -124,7 +127,7 @@ body{
 
 /* ----------------------------- Button Styles ----------------------------- */
 
-.button-styles{
+.button{
   border: none;
   background-color:#578941;
   color: white;
@@ -132,13 +135,13 @@ body{
   border: 1px solid #578941;
 }
 
-.button-styles:hover , .button-styles:active{
+.button:hover , .button:active{
     background-color: white;
     color: #578941;
     background-position: 0 0;
 }
 
-.button-styles:active{
+.button:active{
     opacity: 0.5;
 }
 

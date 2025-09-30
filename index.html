@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <header class="main-header">
+    <header class="main__header">
         <nav class="navbar">
             <div class="home-link"><a href="index.html" class="home-link__text">FlowState</a></div>
             <ul class="navbar-section">
-                <li class="navbar__list"><a href="calculateProductivity.html"  class="navbar__text navbar-selection" id="calculate-productivity-page">Calculate Productivity</a></li>
+                <li class="navbar__list"><a href="calculate-productivity.html"  class="navbar__text navbar-selection" id="calculate-productivity-page">Calculate Productivity</a></li>
                 <li class="navbar__list"><a href="history.html"  class="navbar__text navbar-selection" id="history-page">History</a></li>
                 <li class="navbar__list"><a href="about.html"  class="navbar__text navbar-selection" id="about-page">About</a></li>
                 <button class="navbar__button navbar__button--primary">
@@ -27,12 +27,12 @@
     </header>
     
                         
-    <main >
-        <section class="container-home-page hero hero-background" id="starter_home">
-            <div class="starter hero-home-page">
-                <h1>FlowState</h1>
-                <h4>Productivity Tracker</h4>
-                <a href="#starter-button"><button class="button-starter button-styles">Start Tracking</button></a>
+    <main class="home">
+        <section class="hero-home" id="starter_home">
+            <div class="hero-home__image hero-home-content">
+                <h1 class="hero-home__title">FlowState</h1>
+                <h4 class="hero-home__subtitle">Productivity Tracker</h4>
+                <a href="#starter-button"><button class="button hero-home__button">Start Tracking</button></a>
             </div>
         </section>
 
@@ -49,19 +49,19 @@
             <div class="content content-img content-description content-link content-button" id="calculateProductivity">
                 <img src="images/woman-on-a-call.jpg" alt="calculateProductivity">
                 <p>This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you!</p>
-                <a href="calculateProductivity.html"><button class="content-link-button button-styles">Calculate Productivity</button></a>
+                <a href="calculateProductivity.html"><button class="content-link-button button">Calculate Productivity</button></a>
             </div>
             
             <div class="content content-img content-description content-link content-button" id="history">
                 <img src="images/green-data.jpg" alt="history">
                 <p>Want to check your progress? Click the button below and we'll show you your analytics since using this website for a monthly and daily report!</p>
-                <a href="history.html"><button class="content-link-button button-styles">See Progress</button></a>
+                <a href="history.html"><button class="content-link-button button">See Progress</button></a>
             </div>
 
             <div class="content content-img content-description content-link content-button" id="about">
                 <img src="images/teamwork.jpg" alt="about us">
                 <p>Come check out the developers if you wish! We have information concerning this website and the background of this project.</p>
-                <a href="about.html"><button class="content-link-button button-styles">About Us</button></a>
+                <a href="about.html"><button class="content-link-button button">About Us</button></a>
             </div>
         </section>
 
