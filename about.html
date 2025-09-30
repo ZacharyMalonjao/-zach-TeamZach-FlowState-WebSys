@@ -11,13 +11,17 @@
 <body>
     <header class="main-header">
         <nav class="navbar">
-            <div class="home-link"><a href="index.html">FlowState</a></div>
-            <ul class="nav-section">
-                <li><a href="calculateProductivity.html"  class="nav-hover-color" id="calculate-productivity-page">Calculate Productivity</a></li>
-                <li><a href="history.html"  class="nav-hover-color" id="history-page">History</a></li>
-                <li><a href="about.html"  class="nav-hover-color" id="about-page">About</a></li>
-                <button class="button-header button-header-color">Sign in</button>
-                <button class="button-header button-header-color">Sign up</button>
+            <div class="home-link"><a href="index.html" class="home-link__text">FlowState</a></div>
+            <ul class="navbar-section">
+                <li class="navbar__list"><a href="calculateProductivity.html"  class="navbar__text navbar-selection" id="calculate-productivity-page">Calculate Productivity</a></li>
+                <li class="navbar__list"><a href="history.html"  class="navbar__text navbar-selection" id="history-page">History</a></li>
+                <li class="navbar__list"><a href="about.html"  class="navbar__text navbar-selection" id="about-page">About</a></li>
+                <button class="navbar__button navbar__button--primary">
+                    <span class="navbar__button-text">Sign in</span>
+                </button>
+                <button class="navbar__button navbar__button--secondary">
+                    <span class="navbar__button-text">Sign up</span>
+                </button>
             </ul>          
         </nav> 
     </header>
@@ -84,11 +88,9 @@
 
         
     </main>
+
     <footer class="footer">
-       <br>
-        
-        <p>&copy;2025 FlowState. All Rights Reserved.</p>
-        <br>
+        <p class="footer__text">&copy;2025 FlowState. All Rights Reserved.</p>
     </footer>
 
 </body>
