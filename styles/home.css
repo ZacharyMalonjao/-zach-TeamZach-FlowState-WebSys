@@ -13,6 +13,10 @@ main {
 
 /* ----------------------------- hero section starter ----------------------------- */
 
+.hero-home{
+    margin-bottom: 2rem;
+}
+
 .hero-home__image {
     background: linear-gradient(rgba(115, 115, 115, 0.5), rgba(115, 115, 115, 0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
@@ -136,7 +140,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 3rem 2rem 3rem;
+    margin: 2rem 3rem;
     background-color: #ffffff;
     flex: 1;
     padding: 2em 3em;

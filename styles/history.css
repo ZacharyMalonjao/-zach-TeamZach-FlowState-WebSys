@@ -17,6 +17,10 @@ main {
 
 /* ----------------------------- hero section ----------------------------- */
 
+.hero-history{
+    margin-bottom: 2rem;
+}
+
 .hero-history__image{
     background: linear-gradient(rgba(115,115,115,0.5), rgba(115,115,115,0.5)), 
                 url(../images/pexels-steve-14053647.jpg);
