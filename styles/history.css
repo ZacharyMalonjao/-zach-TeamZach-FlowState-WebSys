@@ -64,7 +64,7 @@ main {
 /* Donut Section */
 
 
-.container-daily-summary{
+.card{
   background-color: white;
     border-radius: 2em;
     padding: 2em;
@@ -79,39 +79,41 @@ main {
     text-align:center;
 }
 
-.container-daily-summary h3{
+.daily-summary__title{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2rem;
   font-style:bold;
 }
 
-.container-daily-summary .daily-summary-stats {
+.daily-summary__item {
   display: flex;
-  justify-content: center;
-  gap: 4em;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
   font-size: 2rem;
-  margin-bottom: 2rem;
   
 }
-.container-daily-summary .daily-summary-stats p{
+.daily-summary__label, .daily-summary__value{
   border:3px solid #578941 ;
-  
-  padding: 0.5em 1.5em;        /* inside spacing */
+  padding:1rem;
+  width: 28rem;
   border-radius: 2em;  
   margin: 0;
 }
 
-.daily-summary-content {
+.daily-summary__content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4rem;   /* spacing between donut and list */
-  padding: 3rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
 }
 
 
-.daily-summary-donut {
+.daily-summary__donut {
       width: 25rem;
       height: 25rem;
       border-radius: 50%;
@@ -121,10 +123,9 @@ main {
         #2ecc71 70% 100%  /* Green slice = 30% */
       );
       position: relative;
-      margin: 4rem;
 }
 
-.daily-summary-donut::after {
+.daily-summary__donut::after {
     content: "";
     position: absolute;
     top: 25%;
@@ -135,67 +136,64 @@ main {
     background: #fff; /* Center hole */
 }
 
-.daily-summary-sites {
-  font-size: 3rem;
-  padding-right: 1rem;
+.daily-summary__list{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.daily-summary-sites p {
+.daily-summary__heading {
   font-weight: bold;
-  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}
+
+.daily-summary__item--site{
+  text-align: center;
+  font-size: 2.5rem;
+  padding-right: 1rem;
 }
 
 /* -------------------- Monthly Summary -------------------- */
 
-.container-monthly-summary{
-  background-color: white;
-    border-radius: 2em;
-    padding: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    /* max-width: 2500px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-}
-
-.container-monthly-summary h3{
+.monthly-summary__title{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2rem;
   font-style:bold;
 }
 
-.container-monthly-summary .monthly-summary-stats {
+.monthly-summary__item {
   display: flex;
-  justify-content: center;
-  gap: 4em;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
   font-size: 2rem;
-  margin-bottom: 2rem;
   
 }
-.container-monthly-summary .monthly-summary-stats p{
+.monthly-summary__label, .monthly-summary__value{
   border:3px solid #578941 ;
-  
-  padding: 0.5em 1.5em;        /* inside spacing */
+  padding:1rem;
+  width: 28rem;
   border-radius: 2em;  
   margin: 0;
 }
 
-.monthly-summary-content {
+.monthly-summary__content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4rem;   /* spacing between donut and list */
-  padding: 3rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+  width: 100%;
 }
 
 
 /* Bar Chart Wrapper to hold chart and grid */
-.bar-chart-wrapper {
+.monthly-summary__bar-chart-wrapper {
   position: relative;
   width: 50rem;
   height: 50rem;
@@ -203,7 +201,7 @@ main {
 }
 
 /* Bar chart with z-index to appear above grid */
-.bar-chart {
+.monthly-summary__bar-chart {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -215,7 +213,7 @@ main {
 }
 
 /* Individual group for each quarter */
-.bar-group {
+.monthly-summary__bar-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +222,7 @@ main {
 }
 
 /* Bars container inside each group */
-.bars {
+.monthly-summary__bars {
   display: flex;
   gap: 0.5em;
   align-items: flex-end;
@@ -232,30 +230,30 @@ main {
 }
 
 /* Base bar style */
-.bar {
+.monthly-summary__bar {
   width: 3rem;
   transition: height 0.3s ease;
 }
 
 /* Spent bar color */
-.bar.unproductive {
+.monthly-summary--unproductive {
   background-color: #ff6b6b;
 }
 
 /* Saved bar color */
-.bar.productive {
+.monthly-summary--productive {
   background-color: #2ecc71;
 }
 
 /* Quarter label */
-.bar-group p {
+.monthly-summary__text {
   margin-top: -2.2em;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 /* Background grid lines behind bar chart */
-.bar-chart-grid {
+.monthly-summary__bar-chart-grid {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -265,8 +263,28 @@ main {
   pointer-events: none;
 }
 
+.grid-line--0 {
+    bottom: 0%;
+}
+
+.grid-line--25 {
+    bottom: 25%;
+}
+
+.grid-line--50 {
+    bottom: 50%;
+}
+
+.grid-line--75 {
+    bottom: 75%;
+}
+
+.grid-line--100 {
+    bottom: 100%;
+}
+
 /* Each horizontal grid line */
-.grid-line {
+.monthly-summary__grid-line {
   position: absolute;
   left: 0;
   width: 100%;
@@ -275,7 +293,7 @@ main {
 }
 
 /* Label for grid line (e.g., 0, 5, 10...) */
-.grid-line span {
+.monthly-summary__grid-label {
   position: absolute;
   left: -2.5rem;
   bottom: -0.5rem;
@@ -283,14 +301,24 @@ main {
   color: #777;
 }
 
-.monthly-summary-sites {
-  font-size: 3rem;
-  padding-right: 1rem;
+.monthly-summary__list{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.monthly-summary-sites p {
+.monthly-summary__heading {
   font-weight: bold;
-  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}
+
+.monthly-summary__item--site{
+  text-align: center;
+  font-size: 2.5rem;
+  padding-right: 1rem;
 }
 
 .footer{

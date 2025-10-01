@@ -129,7 +129,7 @@ main {
 
 /* ----------------------------- services section ----------------------------- */
 
-.services{
+.services__container{
     display: flex;
     flex-direction: row;
     /* justify-content: space-between;
@@ -148,12 +148,12 @@ main {
 }
 
 
-.card__image{
+.services__image{
     width: 100%;
     height: auto;
 }
 
-.card__desc{
+.services__desc{
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
@@ -162,19 +162,19 @@ main {
     text-align: center;
 }
 
-.card__link {
+.services__link {
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
 
-.card__link {
+.services__link {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
 }
 
-.card__text{
+.services__text{
     text-align: center;
     font-size: 1.5rem;
 }
@@ -188,7 +188,7 @@ main {
         padding: 10rem;
     }
 
-    .card__desc{
+    .services__desc{
     flex: 1;
     font-size: 3rem;
     line-height: 1.6;
@@ -196,27 +196,12 @@ main {
     padding: 2rem;
 }
 
-    .card__text{
+    .services__text{
         font-size: 2.5rem;
     }
 
 }
 
-/* ----------------------------- Footer section descriptions ----------------------------- */
-
-.footer hr{
-    border: none;
-    background-color: #7ed957;
-    height: 2px;
-}
-
-.footer{
-    color: white;
-}
-
-.footer p{
-    margin: 2em;
-}
 
 
 /*.content:hover{

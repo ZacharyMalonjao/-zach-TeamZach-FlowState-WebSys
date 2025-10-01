@@ -28,87 +28,101 @@
     
                         
     <main class="history">
-        <section class="hero-history">
+        <section class="hero hero-history">
             <div class="hero-history__image hero-history__row">
             <h1 class="hero-history__title">History</h1>
             <p class="hero-history__paragraph">The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
             </div>
         </section>
          
-        <section class = "container-daily-summary">
-            <h3>Daily Summary</h3>
-            <!--Top Analytics-->
-            <div class="daily-summary-stats">
-                <p>Productivity: 4 hrs 2 mins</p>
-                <p>Time Wasted: 34 mins</p>
-            </div>    
-            <!--Chart-->
-                <div class="daily-summary-content">
-                    <div class="daily-summary-donut"></div>
+        <section class ="daily-summary">
+            <div class="card">
+                <h3 class="daily-summary__title">Daily Summary</h3>
+                <!--Top Analytics-->
+                <div class="daily-summary__item">
+                    <p class="daily-summary__label">Productivity: 4 hrs 2 mins</p>
+                    <p class="daily-summary__value">Time Wasted: 34 mins</p>
+                </div>    
+                <!--Chart-->
+                <div class="daily-summary__content">
+                    <div class="daily-summary__donut"></div>
                     <!--Visited Sites-->
-                    <div class="daily-summary-sites">
-                        <p>Top Visited Sites</p>
-                        <ol>
-                            <li>Google Sheets</li>
-                            <li>Stack Overflow</li>
-                            <li>Youtube</li>
+                    <div class="daily-summary__list">
+                        <p class="daily-summary__heading">Top Visited Sites</p>
+                        <ol class="daily-summary__site">
+                            <li class="daily-summary__item--site">Google Sheets</li>
+                            <li class="daily-summary__item--site">Stack Overflow</li>
+                            <li class="daily-summary__item--site">Youtube</li>
                         </ol>    
                     </div>
                 </div>
+            </div>
         </section> 
 
-        <section class="container-monthly-summary">
-            <h3>Monthly Summary</h3>
-            <!--Top Analytics-->
-            <div class="monthly-summary-stats">
-                <p>Productivity: 4 hrs 2 mins</p>
-                <p>Time Wasted: 34 mins</p>
-            </div> 
-            <!--Chart-->
-            <div class="monthly-summary-content">
-            <!-- Chart with grid wrapper -->
-            <div class="bar-chart-wrapper">
-                <div class="bar-chart-grid">
-                    <!-- Grid lines -->
-                    <div class="grid-line" style="bottom: 0%"><span>0</span></div>
-                    <div class="grid-line" style="bottom: 25%"><span>5</span></div>
-                    <div class="grid-line" style="bottom: 50%"><span>10</span></div>
-                    <div class="grid-line" style="bottom: 75%"><span>15</span></div>
-                    <div class="grid-line" style="bottom: 100%"><span>20</span></div>
+        <section class="monthly-summary">
+            <div class="card">
+                <h3 class="monthly-summary__title">Monthly Summary</h3>
+                <!--Top Analytics-->
+                <div class="monthly-summary__item">
+                    <p class="monthly-summary__label">Productivity: 4 hrs 2 mins</p>
+                    <p class="monthly-summary__value">Time Wasted: 34 mins</p>
+                </div>  
+                <!--Chart-->
+                <div class="monthly-summary__content">
+                <!-- Chart with grid wrapper -->
+                <div class="monthly-summary__bar-chart-wrapper">
+                    <div class="monthly-summary__bar-chart-grid">
+                        <!-- Grid lines -->
+                        <div class="monthly-summary__grid-line grid-line--0">
+                            <span class="monthly-summary__grid-label">0</span>
+                        </div>
+                        <div class="monthly-summary__grid-line grid-line--25">
+                            <span class="monthly-summary__grid-label">5</span>
+                        </div>
+                        <div class="monthly-summary__grid-line grid-line--50">
+                            <span class="monthly-summary__grid-label">10</span>
+                        </div>
+                        <div class="monthly-summary__grid-line grid-line--75">
+                            <span class="monthly-summary__grid-label">15</span>
+                        </div>
+                        <div class="monthly-summary__grid-line grid-line--100">
+                            <span class="monthly-summary__grid-label">20</span>
+                        </div>
+                    </div>
+                    <!-- Actual bar chart -->
+                    <div class="monthly-summary__bar-chart">
+                        <div class="monthly-summary__bar-group">
+                            <div class="monthly-summary__bars">
+                                <div class="monthly-summary__bar monthly-summary--productive" style="height: 60%"></div>
+                                <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 40%"></div>
+                            </div>
+                            <p class="monthly-summary__text">Jan</p>
+                        </div>
+                        <div class="monthly-summary__bar-group">
+                            <div class="monthly-summary__bars">
+                                <div class="monthly-summary__bar monthly-summary--productive" style="height: 50%"></div>
+                                <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 50%"></div>
+                            </div>
+                            <p class="monthly-summary__text">Feb</p>
+                        </div>
+                        <div class="monthly-summary__bar-group">
+                            <div class="monthly-summary__bars">
+                                <div class="monthly-summary__bar monthly-summary--productive" style="height: 70%"></div>
+                                <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 30%"></div>
+                            </div>
+                            <p class="monthly-summary__text">Mar</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Actual bar chart -->
-                <div class="bar-chart">
-                    <div class="bar-group">
-                        <div class="bars">
-                            <div class="bar productive" style="height: 60%"></div>
-                            <div class="bar unproductive" style="height: 40%"></div>
-                        </div>
-                        <p>Jan</p>
+                    <!-- Sites -->
+                    <div class="monthly-summary__list">
+                        <p class="monthly-summary__heading">Top Visited Sites</p>
+                        <ol class="monthly-summary__site">
+                            <li class="monthly-summary__item--site">Google Sheets</li>
+                            <li class="monthly-summary__item--site">Stack Overflow</li>
+                            <li class="monthly-summary__item--site">Youtube</li>
+                        </ol>    
                     </div>
-                    <div class="bar-group">
-                        <div class="bars">
-                            <div class="bar productive" style="height: 50%"></div>
-                            <div class="bar unproductive" style="height: 50%"></div>
-                        </div>
-                        <p>Feb</p>
-                    </div>
-                    <div class="bar-group">
-                        <div class="bars">
-                            <div class="bar productive" style="height: 70%"></div>
-                            <div class="bar unproductive" style="height: 30%"></div>
-                        </div>
-                        <p>Mar</p>
-                    </div>
-                </div>
-            </div>
-                <!-- Sites -->
-                <div class="monthly-summary-sites">
-                    <p>Top Visited Sites</p>
-                    <ol>
-                        <li>Google Sheets</li>
-                        <li>Stack Overflow</li>
-                        <li>Youtube</li>
-                    </ol>
                 </div>
             </div>
         </section>
