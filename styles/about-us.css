@@ -62,16 +62,15 @@ main {
 
      
 
-/* -------------------- Green Background Section -------------------- */
-.green-section{
+/* -------------------- about Section -------------------- */
+.about{
     /* background-color: #8ad16b; */
     /* display: flex; */
     /* justify-content: center; */
     margin: 2rem 3rem;
 }
 
-/* -------------------- White Background Section -------------------- */
-.content-about{
+.about-card{
     background-color: white;
     border-radius: 1em;
     padding: 5rem;
@@ -82,12 +81,12 @@ main {
     justify-content: space-between;
 }
 
-.content-about h2{
+.about__title{
     font-size: 2rem;
     margin: 1.5rem 0;
 }
 
-.content-about p{
+.about__desc{
     padding: 1rem 0;
     flex: 1;
     font-size: 1.6rem;
@@ -102,21 +101,28 @@ main {
     border-radius: 1rem;
 }
 
-.websys-developers h2{
+.developers__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.developers__title{
     color: black;
     font-size: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 3rem;
 }
 
-.developers-section{
+.developers__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     margin-top: 2em;
 }
 
-.developer-card{
+.developers-card{
     background: rgb(255, 255, 255);
     border: 4px solid #578941;
     border-radius: 18px;
@@ -125,10 +131,9 @@ main {
     align-items: center;
     text-align: center;
     padding: 1.5em;
-
 }
 
-.developer-card img{
+.developers__image{
     width: 15rem;
     height: 15rem;
     border-radius: 16px;
@@ -136,27 +141,18 @@ main {
     margin-bottom: 1em;
 }
 
-.developer-card h3{
+.developers__name{
     font-size: 2rem;
     margin: 0.5em 0 0.5em 0;
     color: black;
 }
 
-.developer-card p{
+.developers__desc{
     padding: 1rem 0;
     flex: 1;
     font-size: 1.6rem;
     line-height: 1.6;
     color: black;
-}
-
-.developers-frame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 2em;
-    margin-right: 3em;
-    margin-left: 3em ; */
 }
 
 .footer{
@@ -165,28 +161,20 @@ main {
 }
 
 @media (max-width: 37.5rem){
-    .developers-section{
+    .developers__content{
         display: flex;
         flex-direction: column;
     }
 
-    .content-about p{
+    .about__desc, .developers__desc{
         font-size: 3rem;
     }
 
-    .developer-card p{
-        font-size: 3rem;
-    }
-
-    .developer-card h3{
+    .developers__name{
         font-size: 3.4rem;
     }
 
-    .websys-developers h2, .content-about h2{
+    .about__title, .developers__title{
         font-size: 4.2rem;
-    }
-
-    .hero p{
-        font-size: 2.5rem;
     }
 }
