@@ -174,13 +174,13 @@ main {
     border-radius: 5px;
 }
 
-.services__text{
+.services_text{
     text-align: center;
     font-size: 1.5rem;
 }
 
 @media (max-width: 37.5rem){
-    .services{
+    .services__container{
         flex-direction: column;
     }
 
