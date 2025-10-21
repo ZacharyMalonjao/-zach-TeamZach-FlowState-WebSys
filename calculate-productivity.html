@@ -84,24 +84,9 @@
                     </tr>
                     </thead>
                     <tbody class="table__body">
-                    <tr>
-                        <td class="table__desc">Youtube</td>
-                        <td class="table__desc">34</td>
-                        <td class="table__desc">Unproductive</td>
-                        <td class="table__desc"><button class="button table-remove__button">X</button></td>
+                    
                     </tr>
-                    <tr>
-                        <td class="table__desc">Stack Overflow</td>
-                        <td class="table__desc">48</td>
-                        <td class="table__desc">Productive</td>
-                        <td class="table__desc"><button class="button table-remove__button">X</button></td>
-                    </tr>
-                    <tr>
-                        <td class="table__desc">Google Sheets</td>
-                        <td class="table__desc">298</td>
-                        <td class="table__desc">Productive</td>
-                        <td class="table__desc"><button class="button table-remove__button">X</button></td>
-                    </tr>
+             
                     </tbody>
                 </table>
             </div>
@@ -114,15 +99,26 @@
 
             <!-- Top Analytics -->
             <div class="summary__item">
-                <p class="summary__label">Productivity: 4 hrs 2 mins</p>
-                <p class="summary__value">Time Wasted: 34 mins</p>
+                <p class="summary__label">Productivity: <span id="productive-total">0 mins</span></p>
+                <p class="summary__value">Unproductivity: <span id="unproductive-total">0 mins</span></p>
             </div>    
 
             <!-- Chart -->
             <div class="summary__content">
-                <div class="summary__donut"></div>
-                <!-- You can add a list or breakdown next to the donut if needed -->
-            </div>
+                <div class="summary__donut">
+                    <svg viewBox="0 0 40 40" class="donut">
+                        <circle class="donut-ring" cx="18" cy="18" r="15" />
+                        <circle class="donut-segment donut-productive" cx="18" cy="18" r="15" stroke-dasharray="0 100" />
+                        <circle class="donut-segment donut-unproductive" cx="18" cy="18" r="15" stroke-dasharray="0 100" stroke-dashoffset="0" />
+                        <text x="18" y="20.35" class="donut-text">0%</text>
+                    </svg>
+
+                    <div class="donut-labels">
+                        <p class="donut-label productive-label"><span class="label-color productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
+                        <p class="donut-label unproductive-label"><span class="label-color unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
+                    </div>
+                </div>
+  
             </div>
         </section>
 
@@ -132,6 +128,8 @@
         <p class="footer__text">&copy;2025 FlowState. All Rights Reserved.</p>
     </footer>
 
-
+    <script src="scripts/calculateProductivity.js"></script>
 </body>
 </html>
+
+
