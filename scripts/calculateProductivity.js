@@ -1,9 +1,10 @@
 //--------------O B J E C T S--------------
-class Record{
-    constructor(website, minutes, tag){
-        this.website=website;
-        this.minutes=minutes;
-        this.tag=tag;
+class Record {
+    constructor(website, minutes, tag, date = new Date().toISOString().split('T')[0]) {
+        this.website = website;
+        this.minutes = minutes;
+        this.tag = tag;
+        this.date = date; // format like "2025-10-22"
     }
 }
 
@@ -29,6 +30,8 @@ class ProductivityTracker{
         return{productive, unproductive}
     }
 }
+
+
 //---M E T H O D S-------
 function updateTotals(){
     const totals = tracker.calculateTotals();
@@ -61,13 +64,35 @@ function updateDonutChart(productivePercent, unproductivePercent) {
 
 }
 
+// Load data
+function loadRecords() {
+    const today = new Date().toISOString().split('T')[0];
+    const lastSavedDate = localStorage.getItem("lastSavedDate");
+    const saved = JSON.parse(localStorage.getItem("productivityRecords")) || [];
+
+    if (lastSavedDate === today) {
+        tracker.records = saved.map(r => new Record(r.website, r.minutes, r.tag, r.date));
+    } else {
+        // new day, clear today's list
+        tracker.records = [];
+        localStorage.setItem("productivityRecords", JSON.stringify([]));
+        localStorage.setItem("lastSavedDate", today);
+    }
+}
+
+// Save data
+function saveRecords() {
+    const today = new Date().toISOString().split('T')[0];
+    localStorage.setItem("productivityRecords", JSON.stringify(tracker.records));
+    localStorage.setItem("lastSavedDate", today);
+}
+
+
+
 
 //-----D E C L A R A T I O N S--------
 const tracker = new ProductivityTracker();
 
-// tracker.addRecord(new Record("YouTube", 34, "unproductive"));
-// tracker.addRecord(new Record("Stack Overflow", 48, "productive"));
-// tracker.addRecord(new Record("Google Sheets", 120, "productive"));
 
 const form = document.querySelector(".form-input__container");
 const tableBody = document.querySelector(".table__body");
@@ -75,10 +100,25 @@ const productiveTotal = document.querySelector("#productive-total");
 const unproductiveTotal = document.querySelector("#unproductive-total");
 
 
+//----I N I T--------
+loadRecords();
+
+for (let record of tracker.records) {
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `
+        <td class="table__desc">${record.website}</td>
+        <td class="table__desc">${record.minutes}</td>
+        <td class="table__desc">${record.tag}</td>
+        <td class="table__desc"><button class="button table-remove__button">X</button></td>
+    `;
+    tableBody.appendChild(newRow);
+}
+updateTotals();
+
 //-------E V E N T  L I S T E N E R S--------
 form.addEventListener("submit", function(event){
     event.preventDefault();
-   //  console.log("✅ Form submitted event fired");
+   
     //Get values
     const website = document.querySelector("#website").value;
     const minutes = parseInt(document.querySelector("#minutes").value);
@@ -98,21 +138,30 @@ form.addEventListener("submit", function(event){
     const record = new Record(website, minutes, tag);
     tracker.addRecord(record);
 
+     saveRecords();
+    console.log("🗂️ LocalStorage content:");
+for (let key in localStorage) {
+  if (localStorage.hasOwnProperty(key)) {
+    console.log(key, "➡️", localStorage.getItem(key));
+  }
+}
+
     //update table
-    const newRow = document.createElement("tr")
+    const newRow = document.createElement("tr");
     newRow.innerHTML = `
         <td class="table__desc">${website}</td>
         <td class="table__desc">${minutes}</td>
         <td class="table__desc">${tag}</td>
         <td class="table__desc"><button class="button table-remove__button">X</button></td>
     `;
+    tableBody.appendChild(newRow);
 
-     tableBody.appendChild(newRow);
 
-      const totals = tracker.calculateTotals();
-    console.log(totals); // for now, just show in console
+      //const totals = tracker.calculateTotals();
+   // console.log(totals); // for now, just show in console
 
     updateTotals();
+  
    
     form.reset();
 });
@@ -131,6 +180,7 @@ tableBody.addEventListener("click", function(event){
         tracker.records = tracker.records.filter(record => {
             return !(record.website === website && record.minutes === minutes && record.tag === tag);
         });
+        saveRecords();
          row.remove();
         updateTotals();
     }
