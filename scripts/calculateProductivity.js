@@ -139,10 +139,10 @@ form.addEventListener("submit", function(event){
     tracker.addRecord(record);
 
      saveRecords();
-    console.log("🗂️ LocalStorage content:");
+    console.log("LocalStorage content:");
 for (let key in localStorage) {
   if (localStorage.hasOwnProperty(key)) {
-    console.log(key, "➡️", localStorage.getItem(key));
+    console.log(key, localStorage.getItem(key));
   }
 }
 
