@@ -407,3 +407,17 @@ main {
     background-color: #578941;
     display:block;
 }
+
+.monthly-summary__bar-chart {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem; /* optional, gives breathing room for scrollbar */
+  scroll-snap-type: x mandatory; /* optional: nice scrolling feel */
+}
+
+.monthly-summary__bar-group {
+  flex: 0 0 50px; /* each month stays same width */
+  scroll-snap-align: start; /* optional, aligns bars nicely when scrolling */
+}
+
