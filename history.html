@@ -80,8 +80,8 @@
                 <h3 class="monthly-summary__title">Monthly Summary</h3>
                 <!--Top Analytics-->
                 <div class="monthly-summary__item">
-                    <p class="monthly-summary__label">Productivity: 4 hrs 2 mins</p>
-                    <p class="monthly-summary__value">Time Wasted: 34 mins</p>
+                    <p class="monthly-summary__label">Productivity: <span id="monthly-productive-total">0 mins</span></p>
+                    <p class="monthly-summary__value">Unproductivity: <span id="monthly-unproductive-total">0 mins</span></p>
                 </div>  
                 <!--Chart-->
                 <div class="monthly-summary__content">
@@ -129,14 +129,15 @@
                             <p class="monthly-summary__text">Mar</p>
                         </div>
                     </div>
+                    <div id="debug-output" style="background:#f9f9f9; padding:10px; margin:10px 0; border:1px solid #ccc; max-height:200px; overflow:auto;"></div>
+
                 </div>
                     <!-- Sites -->
                     <div class="monthly-summary__list">
                         <p class="monthly-summary__heading">Top Visited Sites</p>
                         <ol class="monthly-summary__site">
-                            <li class="monthly-summary__item--site">Google Sheets</li>
-                            <li class="monthly-summary__item--site">Stack Overflow</li>
-                            <li class="monthly-summary__item--site">Youtube</li>
+                            <li class="monthly-summary__item--site">Websites will show up here once you start tracking</li>
+                       
                         </ol>    
                     </div>
                 </div>
