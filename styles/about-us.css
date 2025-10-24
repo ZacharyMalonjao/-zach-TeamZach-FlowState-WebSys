@@ -40,18 +40,16 @@ main {
     text-align: center;
 }
 
-.hero-about__title{
-  color: #fcfdfc;
+.hero-about__padding{
+  
   padding: 10rem;
-  font-weight: bold;
-  font-size: 5rem;
 }
 
-.hero-about__paragraph{
-    color: white;
+.extra-space{
+   
     margin-right: 8rem;
     padding-left: 8rem;
-    font-size:2rem;
+   
 }
 
 @media (max-width: 37.5rem){
@@ -87,11 +85,9 @@ main {
 }
 
 .about__desc{
-    padding: 1rem 0;
-    flex: 1;
+   
     font-size: 1.6rem;
-    line-height: 1.6;
-    color: black;
+ 
 }
 
 .developers{
@@ -109,9 +105,9 @@ main {
 }
 
 .developers__title{
-    color: black;
+ 
     font-size: 2rem;
-    margin-bottom: 2rem;
+    
     padding-bottom: 3rem;
 }
 
@@ -136,9 +132,9 @@ main {
 .developers__image{
     width: 15rem;
     height: 15rem;
-    border-radius: 16px;
+ 
     object-fit: cover;
-    margin-bottom: 1em;
+
 }
 
 .developers__name{

@@ -41,18 +41,18 @@ main {
 }
  /*  */
 
-.hero-calculate-productivity__title{
-  color: #fcfdfc;
+.hero-calculate-productivity__padding{
+  
   padding: 10rem;
-  font-weight: bold;
-  font-size: 5rem;
+ 
+
 }
 
-.hero-calculate-productivity__paragraph{
-    color: white;
+.extra-space{
+  
     margin-right: 8rem;
     padding-left: 8rem;
-    font-size:2rem;
+
 }
 
 @media (max-width: 37.5rem){
@@ -65,16 +65,26 @@ main {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
-  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  margin: 2rem 0rem; 
+  /* shorthand for top/bottom + left/right */
   /* display: flex;
   flex-direction: column; */
+}
+
+
+.white_box_summary {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 0rem; 
 }
 
 .white_box_table {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
-  margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
+  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  min-height: 40rem;
 }
 
 .white_box_form-long {
@@ -104,28 +114,20 @@ main {
 }
 
 .form-input__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 60rem; /* or whatever matches the width of your inputs */
-  align-items: flex-start; /* keep labels aligned left inside each row */
+  height: 100%;
 }
 
 .form-input__row {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
-  
   gap: 1rem;
   margin-bottom: 1.5rem; 
 }
 
 .form-input__label {
   min-width: 15rem;
-  text-align: start; 
-  align-self: center;
   font-size: 2rem;        
 }
 
@@ -189,36 +191,29 @@ main {
 /* ----------------------------- Table section ----------------------------- */
 
  .table {
-  width: 100%;
   border-collapse: collapse;  /* merge borders */
   border: 1px solid #a2d18f; /* outer border */
-  font-size: 2rem;
 }
 
 .table__heading, .table__desc {
   border: 1px solid #a2d18f;  /* inner borders */
-  padding: 2rem;
-  text-align: left;
 }
 
 .table__heading:nth-child(2),
 .table__desc:nth-child(2),
 .table__heading:nth-child(3),
 .table__desc:nth-child(3) {
-  width: 3rem;  /* narrow columns for numbers/tags */
+  max-width: 5rem;  /* narrow columns for numbers/tags */
 }
 
 .table__heading:nth-child(4),
 .table__desc:nth-child(4) {
-  width: 3rem;  /* narrow column for buttons */
+  max-width: 1rem;  /* narrow column for buttons */
 }
 
 .table-remove__button {
-  font-size: 1.5rem;
-  padding: 1rem 1rem;
   border-radius: 12px;
-  display: flex;
-  justify-content: center;
+
 }
 
 
@@ -246,17 +241,15 @@ main {
 }
 .summary__label, .summary__value{
   border:3px solid #578941 ;
-  padding:1rem;
   width: 28rem;
   border-radius: 2em;  
-  margin: 0;
 }
 
 .summary-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20rem;  /* space between donut and optional list */
+ /* space between donut and optional list */
 }
 
 /*
@@ -312,7 +305,6 @@ main {
 }
 
 .donut-text {
-  font-size: 0.5em;
   text-anchor: middle;
   fill: #333;
   transform: rotate(90deg);
@@ -321,9 +313,7 @@ main {
 
 
 .donut-labels {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  
   color: #333;
 }
 
@@ -331,12 +321,10 @@ main {
   margin: 0.2rem 0;
 }
 
-.label-color {
-  display: inline-block;
+.label-size {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 6px;
 }
 
 .productive-color {
@@ -345,4 +333,17 @@ main {
 
 .unproductive-color {
   background-color: #2ecc71; /* light green */
+}
+
+
+@media(min-width: 87.5rem){
+    .white_box_summary{
+      height: 49rem;
+    }
+}
+
+@media(max-width: 75rem){
+    .white_box_form{
+      height: 52rem;
+    }
 }
