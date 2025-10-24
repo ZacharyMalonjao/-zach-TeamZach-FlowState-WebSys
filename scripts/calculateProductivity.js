@@ -106,10 +106,10 @@ loadRecords();
 for (let record of tracker.records) {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
-        <td class="table__desc">${record.website}</td>
-        <td class="table__desc">${record.minutes}</td>
-        <td class="table__desc">${record.tag}</td>
-        <td class="table__desc"><button class="button table-remove__button">X</button></td>
+        <td class="table__desc p-4 text-center">${record.website}</td>
+        <td class="table__desc p-4 text-center">${record.minutes}</td>
+        <td class="table__desc p-4 text-center">${record.tag}</td>
+        <td class="table__desc p-4 text-center"><button class="button fs-3 p-4 table-remove__button">X</button></td>
     `;
     tableBody.appendChild(newRow);
 }
@@ -149,10 +149,10 @@ for (let key in localStorage) {
     //update table
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
-        <td class="table__desc">${website}</td>
-        <td class="table__desc">${minutes}</td>
-        <td class="table__desc">${tag}</td>
-        <td class="table__desc"><button class="button table-remove__button">X</button></td>
+        <td class="table__desc p-4 text-center">${website}</td>
+        <td class="table__desc p-4 text-center">${minutes}</td>
+        <td class="table__desc p-4 text-center">${tag}</td>
+        <td class="table__desc p-4 text-center"><button class="button fs-3 p-4 table-remove__button">X</button></td>
     `;
     tableBody.appendChild(newRow);
 

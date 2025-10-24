@@ -123,8 +123,6 @@ body{
 }
 
 .footer__text{
-    margin: 2rem;
-    font-size: 1.4rem;
 }
 
 /* ----------------------------- Button Styles ----------------------------- */
@@ -148,9 +146,16 @@ body{
     opacity: 0.5;
 }
 
-@media(max-width: 87.5rem){
+@media(min-width: 100rem){
     html{
         font-size: 100%;
+    }
+}
+
+
+@media(max-width: 87.5rem){
+    html{
+        font-size: 87.5%;
     }
 }
 
@@ -174,7 +179,6 @@ body{
     html{
         font-size: 37.5%;
     }
-
     
 }
 
