@@ -83,7 +83,8 @@ main {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
-  margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
+  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  min-height: 40rem;
 }
 
 .white_box_form-long {
@@ -190,36 +191,29 @@ main {
 /* ----------------------------- Table section ----------------------------- */
 
  .table {
-  width: 100%;
   border-collapse: collapse;  /* merge borders */
   border: 1px solid #a2d18f; /* outer border */
-  font-size: 2rem;
 }
 
 .table__heading, .table__desc {
   border: 1px solid #a2d18f;  /* inner borders */
-  padding: 2rem;
-  text-align: left;
 }
 
 .table__heading:nth-child(2),
 .table__desc:nth-child(2),
 .table__heading:nth-child(3),
 .table__desc:nth-child(3) {
-  width: 3rem;  /* narrow columns for numbers/tags */
+  max-width: 5rem;  /* narrow columns for numbers/tags */
 }
 
 .table__heading:nth-child(4),
 .table__desc:nth-child(4) {
-  width: 3rem;  /* narrow column for buttons */
+  max-width: 1rem;  /* narrow column for buttons */
 }
 
 .table-remove__button {
-  font-size: 1.5rem;
-  padding: 1rem 1rem;
   border-radius: 12px;
-  display: flex;
-  justify-content: center;
+
 }
 
 
@@ -342,3 +336,14 @@ main {
 }
 
 
+@media(min-width: 87.5rem){
+    .white_box_summary{
+      height: 49rem;
+    }
+}
+
+@media(max-width: 75rem){
+    .white_box_form{
+      height: 52rem;
+    }
+}
