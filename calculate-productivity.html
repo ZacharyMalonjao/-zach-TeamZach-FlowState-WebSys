@@ -40,26 +40,26 @@
         
 
     <section class="container">
-            <div class="row">
+            <div class="row md-12">
                 <!----------------- Form Section ------------------>
-                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6 md-12">
                     <section class="form-input white_box_form">
-                        <div class="card-form-input">
-                            <form class="form-input__container">
-                                <div class="form-input__wrapper "> 
-                                    <h3 class="form-input__heading">Website Entry</h3>
+                        <div class="align-items-center">
+                            <form>
+                                <div class="form-input__wrapper d-flex flex-column gap-4 mx-auto align-items-start"> 
+                                    <h3 class="fs-1 py-5 text-center w-100">Website Entry</h3>
 
                                     <div class="row mb-6">
-                                        <label for="website" class="col-sm-2 col-2 form-input__label col-form-label">Website:</label>
+                                        <label for="website" class="col-sm-2 col-2 text-start align-self-center form-input__label col-form-label">Website:</label>
                                         <input type="text" id="website" name="website" class="form-input__input form-control form-input__input--large" placeholder="Input website name" required>
                                     </div>
                                     <div class="row mb-6">
-                                        <label for="minutes" class="form-input__label col-2 col-form-label col-sm-2">Minutes spent:</label>
+                                        <label for="minutes" class="text-start align-self-center form-input__label col-2 col-form-label col-sm-2">Minutes spent:</label>
                                         <input type="number" id="minutes" name="minutes" class="form-control form-input__input form-input__input--small" placeholder="Input min" required min="1" max="1440">
                                     </div>
                                     <fieldset class="row mb-6">
-                                        <div class="form-input__row">
-                                            <legend class="col-form-label col-sm-2 pt-0 form-input__label">Status:</legend>
+                                        <div class="d-flex flex-row align-items-center gap-3 mb-4">
+                                            <legend class="col-form-label col-sm-2 pt-0 text-start align-self-center form-input__label">Status:</legend>
                                             <div class="d-flex flex-column justify-content-start">
                                                 <div class="form-check form-input__options">
                                                     <input class="form-check-input" type="radio" name="productivity" id="productive" value="productive" required>
@@ -90,31 +90,31 @@
                 </div>
 
                 
-                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-6 h-100">
                     <!----------------- Summary Section ------------------>
-                    <section class="summary white_box_form">
-                        <div class="card-summary">
-                        <h3 class="summary__heading">Summary</h3>
+                    <section class="summary white_box_summary">
+                        <div class="align-items-center">
+                        <h3 class="fs-1 py-5 text-center w-100">Summary</h3>
     
                         <!-- Top Analytics -->
-                        <div class="summary__item">
-                            <p class="summary__label">Productivity: <span id="productive-total">0 mins</span></p>
-                            <p class="summary__value">Unproductivity: <span id="unproductive-total">0 mins</span></p>
+                        <div class="d-flex flex-row justify-content-evenly align-items-center w-100 fs-2 text-center">
+                            <p class="summary__label p-3 m-0">Productivity: <span id="productive-total">0 mins</span></p>
+                            <p class="summary__value p-3 m-0">Unproductivity: <span id="unproductive-total">0 mins</span></p>
                         </div>    
     
                         <!-- Chart -->
-                        <div class="summary__content">
-                            <div class="summary__donut">
-                                <svg viewBox="0 0 40 40" class="donut">
+                        <div class="d-flex justify-content-center align-content-center mt-5 mb-1">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <svg viewBox="0 0 40 40" class="donut pt-3" >
                                     <circle class="donut-ring" cx="18" cy="18" r="15" />
                                     <circle class="donut-segment donut-productive" cx="18" cy="18" r="15" stroke-dasharray="0 100" />
                                     <circle class="donut-segment donut-unproductive" cx="18" cy="18" r="15" stroke-dasharray="0 100" stroke-dashoffset="0" />
-                                    <text x="18" y="20.35" class="donut-text">0%</text>
+                                    <text x="18" y="20.35" class="donut-text fs-6">0%</text>
                                 </svg>
     
-                                <div class="donut-labels">
-                                    <p class="donut-label productive-label"><span class="label-color productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
-                                    <p class="donut-label unproductive-label"><span class="label-color unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
+                                <div class="donut-labels text-center mt-5 fs-3">
+                                    <p class="my-1 productive-label"><span class="label-size d-inline-block me-2 productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
+                                    <p class="my-1 unproductive-label"><span class="label-size d-inline-block me-2 unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
                                 </div>
                             </div>
                         </div>

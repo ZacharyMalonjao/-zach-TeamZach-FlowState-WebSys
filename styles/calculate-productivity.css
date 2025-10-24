@@ -65,9 +65,18 @@ main {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
-  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  margin: 2rem 0rem; 
+  /* shorthand for top/bottom + left/right */
   /* display: flex;
   flex-direction: column; */
+}
+
+
+.white_box_summary {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 0rem; 
 }
 
 .white_box_table {
@@ -104,28 +113,20 @@ main {
 }
 
 .form-input__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 60rem; /* or whatever matches the width of your inputs */
-  align-items: flex-start; /* keep labels aligned left inside each row */
+  height: 100%;
 }
 
 .form-input__row {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
-  
   gap: 1rem;
   margin-bottom: 1.5rem; 
 }
 
 .form-input__label {
   min-width: 15rem;
-  text-align: start; 
-  align-self: center;
   font-size: 2rem;        
 }
 
@@ -246,17 +247,15 @@ main {
 }
 .summary__label, .summary__value{
   border:3px solid #578941 ;
-  padding:1rem;
   width: 28rem;
   border-radius: 2em;  
-  margin: 0;
 }
 
 .summary-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20rem;  /* space between donut and optional list */
+ /* space between donut and optional list */
 }
 
 /*
@@ -312,7 +311,6 @@ main {
 }
 
 .donut-text {
-  font-size: 0.5em;
   text-anchor: middle;
   fill: #333;
   transform: rotate(90deg);
@@ -321,9 +319,7 @@ main {
 
 
 .donut-labels {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  
   color: #333;
 }
 
@@ -331,12 +327,10 @@ main {
   margin: 0.2rem 0;
 }
 
-.label-color {
-  display: inline-block;
+.label-size {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 6px;
 }
 
 .productive-color {
