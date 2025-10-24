@@ -41,18 +41,18 @@ main {
 }
  /*  */
 
-.hero-calculate-productivity__title{
-  color: #fcfdfc;
+.hero-calculate-productivity__padding{
+  
   padding: 10rem;
-  font-weight: bold;
-  font-size: 5rem;
+ 
+
 }
 
-.hero-calculate-productivity__paragraph{
-    color: white;
+.extra-space{
+  
     margin-right: 8rem;
     padding-left: 8rem;
-    font-size:2rem;
+
 }
 
 @media (max-width: 37.5rem){

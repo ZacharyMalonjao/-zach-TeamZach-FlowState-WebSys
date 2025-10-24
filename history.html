@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowState Productivity Tracker</title>
     <link rel="icon" type="images/png" href="images/e8f1485c-acd4-4c8c-9753-71d4eefc0741.sketchpad (1).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/history.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main__header">
@@ -30,9 +32,9 @@
     <main class="history">
         <!-------- hero section -------->
         <section class="hero hero-history">
-            <div class="hero-history__image hero-history__row">
-            <h1 class="hero-history__title">History</h1>
-            <p class="hero-history__paragraph">The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
+            <div class="hero-history__image  d-flex justify-content-between align-items-center text-center">
+            <h1 class=" text-white fw-bold hero-history__padding fs-0">History</h1>
+            <p class="hero-history__paragraph text-white  fs-2">The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
             </div>
         </section>
          <!-------- daily summary section -------->
@@ -147,8 +149,10 @@
 
     </main>
 
-    <footer class="footer">
-        <p class="footer__text">&copy;2025 FlowState. All Rights Reserved.</p>
+   <footer class="footer py-5 mt-5 text-center text-light">
+     <div class="container d-flex justify-content-center">
+      <p class="footer__text mb-0">&copy; 2025 FlowState. All Rights Reserved.</p>
+     </div>  
     </footer>
 
  <script src="scripts/history.js"></script>
