@@ -60,13 +60,30 @@ main {
     }
 }
 
-.card {
+.white_box_form {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.white_box_table {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
   margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
-  display: flex;
-  flex-direction: column;
+}
+
+.white_box_form-long {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
+  height: 60rem;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 
@@ -99,35 +116,44 @@ main {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
+  
   gap: 1rem;
   margin-bottom: 1.5rem; 
 }
 
 .form-input__label {
   min-width: 15rem;
-  text-align: right; 
+  text-align: start; 
+  align-self: center;
   font-size: 2rem;        
-  margin-right: 1rem;
 }
 
 
 .form-input__input {
   font-size: 2rem;
   height: 5rem;
-  width: 40rem;           /* fixed width for normal inputs */
   padding: 1rem;
   border-radius: 60px;
   border: 3px solid #578941;
 }
 
 .form-input__input--small {
-  width: 17rem;
-  flex: 0 0 auto;
+  width: 100%;
+  flex: 1;
 }
 
+.form-input__input--large {
+  width: 100%;
+  flex: 1; /* allows it to grow and fill available space */
+}
+
+.form-input__option {
+  width: 100%;
+  flex: 1;         
+}
 
 .form-input__options {
-  font-size: 2rem;         
+  font-size: 2rem;        
 }
 
 
