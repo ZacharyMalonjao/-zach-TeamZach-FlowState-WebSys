@@ -15,9 +15,10 @@
     font-family: sans-serif;
 }
 
-html{
+/* html{
     font-size: 62.5%;
-}
+} */
+
 
 body{
     background-color:#a2d18f;
@@ -116,9 +117,9 @@ body{
 
 .footer{
     background-color: #578941;
-    display:block;
-    color: white;
-    margin-top: 2rem;
+   
+    
+   
 }
 
 .footer__text{
@@ -135,6 +136,7 @@ body{
   cursor: pointer;
   border: 1px solid #578941;
 }
+/*btn btn-success border border-success text-white*/
 
 .button:hover , .button:active{
     background-color: white;
@@ -152,7 +154,7 @@ body{
     }
 }
 
-@media(min-width: 81.25rem){
+@media(max-width: 81.25rem){
     html{
         font-size: 75%;
     }
@@ -163,9 +165,9 @@ body{
         font-size: 50%;
     }
 
-    .button_header{
+    /* .button_header{
         width: auto;
-    }
+    } */
 }
 
 @media (max-width: 50rem){
@@ -180,4 +182,9 @@ body{
     html{
         font-size: 25%;
     }
+}
+
+
+.fs-0{
+ font-size: 5rem;
 }

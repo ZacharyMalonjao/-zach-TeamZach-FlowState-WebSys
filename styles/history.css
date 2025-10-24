@@ -40,18 +40,17 @@ main {
     text-align: center;
 }
 
-.hero-history__title{
-  color: #fcfdfc;
+.hero-history__padding{
+
   padding: 10rem;
-  font-weight: bold;
-  font-size: 5rem;
+
 }
 
 .hero-history__paragraph{
-    color: white;
+    
     margin-right: 8rem;
     padding-left: 8rem;
-    font-size:2rem;
+    
 }
 
 @media (max-width: 37.5rem){
