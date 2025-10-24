@@ -112,15 +112,15 @@ main {
   width: 100%;
 }
 
-
+/*
 .daily-summary__donut {
       width: 25rem;
       height: 25rem;
       border-radius: 50%;
       background: conic-gradient(
-        #578941 70% 40%,   /* Blue slice = 40% */
+        #578941 70% 40%,   
     
-        #2ecc71 70% 100%  /* Green slice = 30% */
+        #2ecc71 70% 100%  
       );
       position: relative;
 }
@@ -133,7 +133,89 @@ main {
     width: 50%;
     height: 50%;
     border-radius: 50%;
-    background: #fff; /* Center hole */
+    background: #fff; 
+}
+*/
+
+.summary__donut{
+  width:75%;
+  margin-right: 25rem;;
+
+}
+.daily-summary_row{
+  display: flex;
+  justify-content: space-evenly; /* space between chart and list */
+  align-items: center; /* vertically center them */
+  gap: 4rem;
+
+}
+.daily-summary__list{
+  margin-left:-10rem;
+}
+
+
+
+.donut {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg); /* start circle at top */
+}
+
+.donut-ring {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 3.5;
+}
+
+.donut-segment {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+}
+
+.donut-productive {
+  stroke: #578941; /* dark green */
+}
+
+.donut-unproductive {
+  stroke: #2ecc71; /* light green */
+}
+
+.donut-text {
+  font-size: 0.5em;
+  text-anchor: middle;
+  fill: #333;
+  transform: rotate(90deg);
+  dominant-baseline: middle;
+}
+
+
+.donut-labels {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.donut-label {
+  margin: 0.2rem 0;
+}
+
+.label-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.productive-color {
+  background-color: #578941; /* dark green */
+}
+
+.unproductive-color {
+  background-color: #2ecc71; /* light green */
 }
 
 .daily-summary__list{
@@ -151,7 +233,7 @@ main {
 }
 
 .daily-summary__item--site{
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   padding-right: 1rem;
 }
@@ -316,7 +398,7 @@ main {
 }
 
 .monthly-summary__item--site{
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   padding-right: 1rem;
 }
@@ -325,3 +407,17 @@ main {
     background-color: #578941;
     display:block;
 }
+
+.monthly-summary__bar-chart {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem; /* optional, gives breathing room for scrollbar */
+  scroll-snap-type: x mandatory; /* optional: nice scrolling feel */
+}
+
+.monthly-summary__bar-group {
+  flex: 0 0 50px; /* each month stays same width */
+  scroll-snap-align: start; /* optional, aligns bars nicely when scrolling */
+}
+

@@ -39,6 +39,7 @@ main {
     text-align: center;
     align-items: center;
 }
+ /*  */
 
 .hero-calculate-productivity__title{
   color: #fcfdfc;
@@ -60,13 +61,30 @@ main {
     }
 }
 
-.card {
+.white_box_form {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 0rem; /* shorthand for top/bottom + left/right */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.white_box_table {
   background-color: white;
   border-radius: 2em;
   padding: 2rem;
   margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
-  display: flex;
-  flex-direction: column;
+}
+
+.white_box_form-long {
+  background-color: white;
+  border-radius: 2em;
+  padding: 2rem;
+  margin: 2rem 3rem; /* shorthand for top/bottom + left/right */
+  height: 60rem;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 
@@ -99,35 +117,44 @@ main {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
+  
   gap: 1rem;
   margin-bottom: 1.5rem; 
 }
 
 .form-input__label {
   min-width: 15rem;
-  text-align: right; 
+  text-align: start; 
+  align-self: center;
   font-size: 2rem;        
-  margin-right: 1rem;
 }
 
 
 .form-input__input {
   font-size: 2rem;
   height: 5rem;
-  width: 40rem;           /* fixed width for normal inputs */
   padding: 1rem;
   border-radius: 60px;
   border: 3px solid #578941;
 }
 
 .form-input__input--small {
-  width: 17rem;
-  flex: 0 0 auto;
+  width: 100%;
+  flex: 1;
 }
 
+.form-input__input--large {
+  width: 100%;
+  flex: 1; /* allows it to grow and fill available space */
+}
+
+.form-input__option {
+  width: 100%;
+  flex: 1;         
+}
 
 .form-input__options {
-  font-size: 2rem;         
+  font-size: 2rem;        
 }
 
 
@@ -232,6 +259,7 @@ main {
   gap: 20rem;  /* space between donut and optional list */
 }
 
+/*
 .summary__donut {
   width: 25rem;
   height: 25rem;
@@ -252,5 +280,69 @@ main {
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  background: #fff; /* Center hole */
+  background: #fff;
+}
+*/
+
+.donut {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg); /* start circle at top */
+}
+
+.donut-ring {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 3.5;
+}
+
+.donut-segment {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+}
+
+.donut-productive {
+  stroke: #578941; /* dark green */
+}
+
+.donut-unproductive {
+  stroke: #2ecc71; /* light green */
+}
+
+.donut-text {
+  font-size: 0.5em;
+  text-anchor: middle;
+  fill: #333;
+  transform: rotate(90deg);
+  dominant-baseline: middle;
+}
+
+
+.donut-labels {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.donut-label {
+  margin: 0.2rem 0;
+}
+
+.label-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.productive-color {
+  background-color: #578941; /* dark green */
+}
+
+.unproductive-color {
+  background-color: #2ecc71; /* light green */
 }
