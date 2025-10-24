@@ -15,9 +15,9 @@
     font-family: sans-serif;
 }
 
-html{
+/* html{
     font-size: 62.5%;
-}
+} */
 
 body{
     background-color:#a2d18f;
@@ -152,7 +152,7 @@ body{
     }
 }
 
-@media(min-width: 81.25rem){
+@media(max-width: 81.25rem){
     html{
         font-size: 75%;
     }
@@ -163,9 +163,9 @@ body{
         font-size: 50%;
     }
 
-    .button_header{
+    /* .button_header{
         width: auto;
-    }
+    } */
 }
 
 @media (max-width: 50rem){
