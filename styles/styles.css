@@ -146,7 +146,7 @@ body{
     opacity: 0.5;
 }
 
-@media(min-width: 100rem){
+/* @media(min-width: 100rem){
     html{
         font-size: 100%;
     }
@@ -180,4 +180,4 @@ body{
     html{
         font-size: 25%;
     }
-}
+} */
