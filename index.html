@@ -29,26 +29,69 @@
             </ul>          
         </nav> 
     </header>
-    
-                        
-    <main class="home">
+
+     <main class="home">
         <!-------- hero section -------->
         <section class="hero hero-home" id="starter_home">
-            <div class="hero-home__image hero-home__col">
+            <div class="hero-home__image d-flex justify-content-center align-items-center flex-column">
                 <h1 class="text-white fw-bold mb-4 custom-big hero-home__fontsize">FlowState</h1>
                 <h4 class="mt-0 mb-4 fs-2 text-white">Productivity Tracker</h4>
                 <a href="#starter-button"><button class="btn btn-success fs-4 rounded-2 mt-3  button hero-home__button">Start Tracking</button></a>
             </div>
         </section>
         <!-------- intro section -------->
-        <section class="intro" id="starter-button">
-            <div class="intro__content">
-                <img src="images/dude-studying.jpg" alt="dude studying" class="intro__image">
-                <p class="intro__desc">Productivity is a very concept to fathom in a world with a plethora of distractions. According to behavioral theory, a boring action can be executed more enjoyably if you track your progress. Our solution? Welcome to the FlowState Productivity Tracker! We have an assortment of uses that you can navigate to below. We can analyze your productivity in the Calculate Productivity Page, or we can see your progress throughout the days in the History Page. If you want to know more about us, feel free to go to the About Us page. </p>
+        <section class="container-fluid my-5 px-3">
+            <div class="card mb-12 py-5 px-5 w-100 bg-white border-radius-box">
+                <div class="row g-0">
+                    <div class="col-md-4 h-100 d-flex align-self-center">
+                    <img src="images/dude-studying.jpg" class="img-fluid rounded-start" alt="dude studying">
+                    </div>
+                    <div class="col-md-8 ps-5">
+                    <div class="card-body h-100 d-flex flex-column justify-content-center gap-4">
+                        <h5 class="card-title fw-bold fs-3">Overview</h5>
+                        <p class="card-text fs-4">Productivity is a very concept to fathom in a world with a plethora of distractions. According to behavioral theory, a boring action can be executed more enjoyably if you track your progress. Our solution? Welcome to the FlowState Productivity Tracker! We have an assortment of uses that you can navigate to below. We can analyze your productivity in the Calculate Productivity Page, or we can see your progress throughout the days in the History Page. If you want to know more about us, feel free to go to the About Us page.</p>
+                    </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-------- services section -------->
-        <section class="services">
+        <section class="services container-fluid px-3">
+            <div class="row justify-content-between">
+                <div class="col-md-4 my-5">
+                    <div class="card border-radius-box">
+                        <img src="images/woman-on-a-call.jpg" class="card-img-top" alt="calculateProductivity">
+                        <div class="card-body p-5 gap-4 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3 fw-bold text-center">Calculate Productivity</h5>
+                            <p class="card-text fs-4 text-center">This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you!</p>
+                            <a href="calculate-productivity.html" class="btn btn-primary button">Calculate Productivity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-5">
+                    <div class="card border-radius-box">
+                        <img src="images/green-data.jpg" class="card-img-top" alt="history">
+                        <div class="card-body p-5 gap-4 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3 fw-bold text-center">Calculate Productivity</h5>
+                            <p class="card-text fs-4 text-center">You want to check your progress? Click the button below and we'll show you your analytics since using this website for the monthly and daily report!</p>
+                            <a href="history.html" class="btn btn-primary button">Calculate Productivity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-5">
+                    <div class="card border-radius-box">
+                        <img src="images/teamwork.jpg" class="card-img-top" alt="about us">
+                        <div class="card-body p-5 gap-4 d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3 fw-bold text-center">About Us</h5>
+                            <p class="card-text fs-4 text-center">Come check out the developers if you wish! We have information concerning this website and the background of this project and team members.</p>
+                            <a href="about-us.html" class="btn btn-primary button">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="services">
             <div class="services__container">
                 <div class="card" id="calculate-productivity">
                     <img src="images/woman-on-a-call.jpg" alt="calculateProductivity" class="services__image">
@@ -68,7 +111,7 @@
                     <a href="about-us.html" class="button d-flex justify-content-center text-decoration-none w-100 p-3 rounded services__text">About Us</a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
