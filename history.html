@@ -12,84 +12,89 @@
 </head>
 <body>
     <header class="main__header">
-        <nav class="navbar">
-            <div class="home-link"><a href="index.html" class="home-link__text">FlowState</a></div>
-            <ul class="navbar-section">
-                <li class="navbar__list"><a href="calculate-productivity.html"  class="navbar__text navbar-selection" id="calculate-productivity-page">Calculate Productivity</a></li>
-                <li class="navbar__list"><a href="history.html"  class="navbar__text navbar-selection" id="history-page">History</a></li>
-                <li class="navbar__list"><a href="about-us.html"  class="navbar__text navbar-selection" id="about-page">About</a></li>
-                <button class="navbar__button navbar__button--primary">
-                    <span class="navbar__button-text">Sign in</span>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand home-link" href="index.html">FlowState</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="navbar__button navbar__button--secondary">
-                    <span class="navbar__button-text">Sign up</span>
-                </button>
-            </ul>          
-        </nav> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-5">
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="calculate-productivity.html">Calculate Productivity</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="about-us.html">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     
                         
     <main class="history">
         <!-------- hero section -------->
         <section class="hero hero-history">
-            <div class="hero-history__image  d-flex justify-content-between align-items-center text-center">
+            <div class="hero-history__image d-flex justify-content-between align-items-center text-center">
             <h1 class=" text-white fw-bold hero-history__padding fs-0">History</h1>
             <p class="hero-history__paragraph text-white  fs-2">The daily and monthly summary of the user can be seen here. Aside from showing the amount of time the user has been productive and unproductive, it also lists the top websites of the user. </p>
             </div>
         </section>
          <!-------- daily summary section -------->
-        <section class ="daily-summary">
-            <div class="card">
-                <h3 class="daily-summary__title">Daily Summary</h3>
+        <section class ="daily-summary container-fluid">
+            <div class="card bg-white p-5 my-5 d-flex flex-column align-items-center text-center mx-2">
+                <h3 class="fs-1 py-5 text-center w-100">Daily Summary</h3>
                 <!--Top Analytics-->
-                <div class="daily-summary__item">
-                    <p class="daily-summary__label">Productivity: <span id="productive-total">0 mins</span></p>
-                    <p class="daily-summary__value">Unproductivity: <span id="unproductive-total">0 mins</span></p>
+                <div class="d-flex flex-row justify-content-evenly align-items-center w-100 fs-2 gap-5">
+                    <p class="daily-summary__label p-3 m-0">Productivity: <span id="productive-total">0 mins</span></p>
+                    <p class="daily-summary__value p-3 m-0">Unproductivity: <span id="unproductive-total">0 mins</span></p>
                 </div>    
-                <div class="daily-summary_row">
+                <div class="d-flex justify-content-evenly align-items-center w-100 row">
                     <!--Chart-->
-                    <div class="daily-summary__content">
+                    <div class="d-flex flex-row justify-content-evenly align-items-center py-5 col-12 col-sm-6">
                         <div class="summary__donut">
-                        <svg viewBox="0 0 40 40" class="donut">
+                        <svg viewBox="0 0 40 40" class="donut pt-3">
                             <circle class="donut-ring" cx="18" cy="18" r="15" />
                             <circle class="donut-segment donut-productive" cx="18" cy="18" r="15" stroke-dasharray="0 100" />
                             <circle class="donut-segment donut-unproductive" cx="18" cy="18" r="15" stroke-dasharray="0 100" stroke-dashoffset="0" />
-                            <text x="18" y="20.35" class="donut-text">0%</text>
+                            <text x="18" y="20.35" class="donut-text fs-6">0%</text>
                         </svg>
 
-                        <div class="donut-labels">
-                            <p class="donut-label productive-label"><span class="label-color productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
-                            <p class="donut-label unproductive-label"><span class="label-color unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
+                            <div class="text-center mt-5 fs-3">
+                                <p class="my-1 productive-label"><span class="label-color d-inline-block rounded-circle me-1 productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
+                                <p class="my-1 unproductive-label"><span class="label-color d-inline-block rounded-circle me-1 unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     
                         <!--Visited Sites-->
-                        <div class="daily-summary__list">
-                            <p class="daily-summary__heading">Top Visited Sites</p>
-                            <ol class="daily-summary__site">
-                                <li class="daily-summary__item--site">Websites will show up here once you start tracking</li>
-                              
-                            </ol>    
-                        </div>
+                    <div class="d-flex flex-column gap-5 py-5 col-6 col-sm-6">
+                        <p class="fw-bold fs-1 text-center d-flex justify-content-center">Top 5 Visited Sites</p>
+                        <ol class="daily-summary__site d-flex justify-content-center">
+                            <li class="text-center fs-2 pe-3 padding--order-link-list">Websites will show up here once you start tracking</li>
+                        </ol>    
                     </div>
                 </div>
             </div>
         </section> 
         <!-------- monthly summary section -------->
-        <section class="monthly-summary">
-            <div class="card">
-                <h3 class="monthly-summary__title">Monthly Summary</h3>
+        <section class="monthly-summary container-fluid">
+            <div class="card bg-white p-5 my-5 d-flex flex-column align-items-center text-center mx-2">
+                <h3 class="fs-1 py-5 text-center w-100">Monthly Summary</h3>
                 <!--Top Analytics-->
-                <div class="monthly-summary__item">
-                    <p class="monthly-summary__label">Productivity: <span id="monthly-productive-total">0 mins</span></p>
-                    <p class="monthly-summary__value">Unproductivity: <span id="monthly-unproductive-total">0 mins</span></p>
+                <div class="d-flex flex-row justify-content-evenly align-items-center w-100 fs-2 gap-5">
+                    <p class="monthly-summary__label p-3 m-0">Productivity: <span id="monthly-productive-total">0 mins</span></p>
+                    <p class="monthly-summary__value p-3 m-0">Unproductivity: <span id="monthly-unproductive-total">0 mins</span></p>
                 </div>  
                 <!--Chart-->
-                <div class="monthly-summary__content">
+                <div class="d-flex flex-row justify-content-evenly align-items-center py-5 w-100 row">
                 <!-- Chart with grid wrapper -->
-                <div class="monthly-summary__bar-chart-wrapper">
-                    <div class="monthly-summary__bar-chart-grid">
+                <div class="monthly-summary__bar-chart-wrapper col-12">
+                    <div class="monthly-summary__bar-chart-grid position-absolute top-0 start-0 h-100 z-1">
                         <!-- Grid lines -->
                         <div class="monthly-summary__grid-line grid-line--0">
                             <span class="monthly-summary__grid-label">0</span>
@@ -109,43 +114,41 @@
                     </div>
                     <!-- Actual bar chart -->
                     <div class="monthly-summary__bar-chart">
-                        <div class="monthly-summary__bar-group">
+                        <div class="d-flex flex-column align-items-center justify-content-end h-100">
                             <div class="monthly-summary__bars">
                                 <div class="monthly-summary__bar monthly-summary--productive" style="height: 60%"></div>
                                 <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 40%"></div>
                             </div>
-                            <p class="monthly-summary__text">Jan</p>
+                            <p class="mt-n3 fw-bold fs-4">Jan</p>
                         </div>
-                        <div class="monthly-summary__bar-group">
+                        <div class="d-flex flex-column align-items-center justify-content-end h-100">
                             <div class="monthly-summary__bars">
                                 <div class="monthly-summary__bar monthly-summary--productive" style="height: 50%"></div>
                                 <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 50%"></div>
                             </div>
-                            <p class="monthly-summary__text">Feb</p>
+                            <p class="mt-n3 fw-bold fs-4">Feb</p>
                         </div>
-                        <div class="monthly-summary__bar-group">
+                        <div class="d-flex flex-column align-items-center justify-content-end h-100">
                             <div class="monthly-summary__bars">
                                 <div class="monthly-summary__bar monthly-summary--productive" style="height: 70%"></div>
                                 <div class="monthly-summary__bar monthly-summary--unproductive" style="height: 30%"></div>
                             </div>
-                            <p class="monthly-summary__text">Mar</p>
+                            <p class="mt-n3 fw-bold fs-4">Mar</p>
                         </div>
                     </div>
                    <!-- <div id="debug-output" style="background:#f9f9f9; padding:10px; margin:10px 0; border:1px solid #ccc; max-height:200px; overflow:auto;"></div>
-                -->
-                </div>
+                    -->
+                    </div>
                     <!-- Sites -->
-                    <div class="monthly-summary__list">
-                        <p class="monthly-summary__heading">Top Visited Sites</p>
-                        <ol class="monthly-summary__site">
-                            <li class="monthly-summary__item--site">Websites will show up here once you start tracking. If you already have teacked, click a bar on the left to see the corresponding monthly sites.</li>
-                       
+                    <div class="d-flex flex-column gap-5 py-5 col-12 col-sm-12">
+                        <p class="fw-bold fs-1 text-center d-flex justify-content-center">Top Visited Sites</p>
+                        <ol class="monthly-summary__site d-flex justify-content-center">
+                            <li class="text-center fs-2 pe-3">Websites will show up here once you start tracking. If you already have teacked, click a bar on the left to see the corresponding monthly sites.</li>
                         </ol>    
                     </div>
                 </div>
             </div>
         </section>
-
 
     </main>
 

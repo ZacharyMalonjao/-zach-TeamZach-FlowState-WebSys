@@ -12,37 +12,44 @@
 </head>
 <body>
     <header class="main__header">
-        <nav class="navbar">
-            <div class="home-link"><a href="index.html" class="home-link__text">FlowState</a></div>
-            <ul class="navbar-section">
-                <li class="navbar__list"><a href="calculate-productivity.html"  class="navbar__text navbar-selection" id="calculate-productivity-page">Calculate Productivity</a></li>
-                <li class="navbar__list"><a href="history.html"  class="navbar__text navbar-selection" id="history-page">History</a></li>
-                <li class="navbar__list"><a href="about-us.html"  class="navbar__text navbar-selection" id="about-page">About</a></li>
-                <button class="navbar__button navbar__button--primary">
-                    <span class="navbar__button-text">Sign in</span>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand home-link" href="index.html">FlowState</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="navbar__button navbar__button--secondary">
-                    <span class="navbar__button-text">Sign up</span>
-                </button>
-            </ul>          
-        </nav> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-5">
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="calculate-productivity.html">Calculate Productivity</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link navbar-selection text-white fs-2 mr-4" href="about-us.html">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     </header>
                      
     <main class="calculate-productivity">
         <!-------- hero section -------->
         <section class="hero hero-calculate-productivity" >
             <div class="hero-calculate-productivity__image d-flex justify-content-between align-items-center text-center">
-            <h1 class="text-white fw-bold  hero-calculate-productivity__padding fs-1 ">Productivity Calculator</h1>
+            <h1 class="text-white fw-bold  hero-calculate-productivity__padding fs-0 ">Productivity Calculator</h1>
             <p class="text-white me-5 ps-5 extra-space fs-3">This is the main tracker of the website. Input your website and the minutes spent, alongside the flags and we will do the calculations for you. </p>
             </div>
         </section>
         
         
-    <section class="container">
+    <section class="container-fluid">
             <div class="row md-12">
                 <!----------------- Form Section ------------------>
                 <div class="col-12 col-md-12 col-lg-6 col-xl-6 md-12">
-                    <section class="form-input white_box_form">
+                    <section class="form-input white_box_form mx-2 my-5">
                         <div class="align-items-center">
                             <form class="form-input__container">
                                 <div class="form-input__wrapper d-flex flex-column gap-4 mx-auto align-items-start"> 
@@ -91,12 +98,12 @@
                 
                 <div class="col-12 col-md-12 col-lg-6 col-xl-6 h-100">
                     <!----------------- Summary Section ------------------>
-                    <section class="summary white_box_summary">
+                    <section class="summary white_box_summary mx-2 my-5">
                         <div class="align-items-center">
                         <h3 class="fs-1 py-5 text-center w-100">Summary</h3>
     
                         <!-- Top Analytics -->
-                        <div class="d-flex flex-row justify-content-evenly align-items-center w-100 fs-2 text-center">
+                        <div class="d-flex flex-row justify-content-evenly align-items-center w-100 fs-2 text-center gap-1">
                             <p class="summary__label p-3 m-0">Productivity: <span id="productive-total">0 mins</span></p>
                             <p class="summary__value p-3 m-0">Unproductivity: <span id="unproductive-total">0 mins</span></p>
                         </div>    
@@ -112,8 +119,8 @@
                                 </svg>
     
                                 <div class="donut-labels text-center mt-5 fs-3">
-                                    <p class="my-1 productive-label"><span class="label-size d-inline-block me-2 productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
-                                    <p class="my-1 unproductive-label"><span class="label-size d-inline-block me-2 unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
+                                    <p class="my-1 productive-label"><span class="label-size d-inline-block rounded-circle me-1 productive-color"></span> Productive: <span id="productive-percent">0%</span></p>
+                                    <p class="my-1 unproductive-label"><span class="label-size d-inline-block rounded-circle me-1 unproductive-color"></span> Unproductive: <span id="unproductive-percent">0%</span></p>
                                 </div>
                             </div>
                         </div>
@@ -122,8 +129,8 @@
                     
                 </div>
                 <div class="col-12">
-                    <section class="table table-bordered w-100 fs-2">
-                        <div class="d-flex flex-column white_box_table">
+                    <section class="table table-bordered w-100 fs-2" >
+                        <div class="d-flex flex-column white_box_table mx-2 my-5">
                             <table class="table__container">
                                 <thead class="table__header">
                                 <tr>

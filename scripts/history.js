@@ -68,8 +68,15 @@ function getTopSites(records, limit = 5) {
 
 const dailyTotals = calculateProductivity(dailyRecords);
 const total = dailyTotals.productive + dailyTotals.unproductive;
-const productivePercent = total ? (dailyTotals.productive / total) * 100 : 0;
-const unproductivePercent = 100 - productivePercent;
+
+let productivePercent = 0;
+let unproductivePercent = 0;
+
+if (total > 0) {
+  productivePercent = (dailyTotals.productive / total) * 100;
+  unproductivePercent = (dailyTotals.unproductive / total) * 100;
+}
+
 //   Labels
 document.getElementById("productive-total").textContent =
   `${dailyTotals.productive} mins `;

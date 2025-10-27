@@ -108,11 +108,11 @@ body{
 }
 
 .navbar-selection:hover{
-    color: #a2d18f;
+    color: #a2d18f !important;
 }
 
 .navbar-selection:active{
-    opacity: 0.5;
+    opacity: 0.5 !important;
 }
 
 .footer{
