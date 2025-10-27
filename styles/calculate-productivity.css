@@ -216,6 +216,10 @@ main {
 
 }
 
+.negative-margin {
+  margin-left: -2rem; /* adjust as needed */
+}
+
 
 /* ----------------------------- Summary section ----------------------------- */
 
@@ -241,7 +245,7 @@ main {
 }
 .summary__label, .summary__value{
   border:3px solid #578941 ;
-  width: 28rem;
+  width: 30rem;
   border-radius: 2em;  
 }
 
